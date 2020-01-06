@@ -52,10 +52,10 @@
 
   .menu {
     li {
+      border-left: solid $border-width $dark-blue;
       @media (min-width: $medium) {
         border-left-width: $border-width--thicker;
       }
-      border-left: solid $border-width $dark-blue;
 
       a {
         color: $white;

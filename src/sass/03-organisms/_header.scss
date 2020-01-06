@@ -1,0 +1,18 @@
+/**
+* @file
+* 03-organisms/_header.scss
+*/
+
+header {
+  min-height: 100vh;
+  background: transparentize($black, 0.1);
+
+  .logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    max-width: 50vw;
+    max-height: 50vw;
+    transform: translatex(-50%);
+  }
+}

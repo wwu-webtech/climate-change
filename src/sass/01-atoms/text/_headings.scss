@@ -20,63 +20,54 @@ h6 {
   line-height: $heading-line-height;
 }
 h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: $double-spacing;
+  text-align: centere;
+  text-transform: uppercase;
+  color: $white;
+  font-family: $condensed;
+  font-size: $h1-font-size;
+  font-weight: $font-weight--bold;
   @media (min-width: $large) {
     font-size: $h1-font-size--max;
   }
-  color: $darkest-blue;
-  display: inline-block;
-  font-family: $title-font;
-  font-size: $h1-font-size;
-  font-weight: $font-weight--bold;
-  padding-bottom: $double-spacing;
-  position: relative;
-  &:after {
-    content: "";
-    background-color: $darkest-blue;
-    border-color: $darkest-blue;
-    border-style:solid;
-    border-width: calc(4px + 1 * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-    bottom: 0;
-    left:0;
-    position: absolute;
-    width:calc(70px + 80 * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-  }
 }
 h2 {
+  color: $dark-blue;
+  font-size: $h2-font-size;
+  font-weight: $font-weight--bold;
   @media (min-width: $large) {
     font-size: $h2-font-size--max;
   }
-  font-size: $h2-font-size;
-  font-weight: $font-weight--bold;
-  color: $dark-blue;
 }
 h3 {
+  color: mix($blue, $dark-blue, 50%);
+  font-size: $h3-font-size;
+  font-weight: $font-weight--semibold;
   @media (min-width: $large) {
     font-size: $h3-font-size--max;
   }
-  font-size: $h3-font-size;
-  font-weight: $font-weight--semibold;
-  color: mix($blue, $dark-blue, 50%);
 }
 h4 {
+  font-size: $h4-font-size;
+  font-weight: $font-weight--regular;
   @media (min-width: $large) {
     font-size: $h4-font-size--max;
   }
-  font-size: $h4-font-size;
-  font-weight:$font-weight--regular;
 }
 h5 {
+  font-size: $h5-font-size;
+  font-weight: $font-weight--regular;
   @media (min-width: $large) {
     font-size: $h5-font-size--max;
   }
-  font-size: $h5-font-size;
-  font-weight:$font-weight--regular;
 }
 h6 {
+  font-size: $h6-font-size;
   @media (min-width: $large) {
     font-size: $h6-font-size--max;
   }
-  font-size: $h6-font-size;
 }
 
 h2 + h3,
@@ -113,14 +104,14 @@ main {
   }
 
   h1 {
-    @media (min-width: $large) {
-      font-size: $h1-font-size--max--largest;
-    }
     text-transform: uppercase;
     border-bottom: none;
     font-family: $title-font;
     font-size: $h1-font-size--largest;
     font-weight: $font-weight--black;
+    @media (min-width: $large) {
+      font-size: $h1-font-size--max--largest;
+    }
 
     &:after {
       display: none;
@@ -128,22 +119,22 @@ main {
   }
 
   h2 {
-    @media (min-width: $large) {
-      font-size: $h2-font-size--max--largest;
-    }
-    font-size: $h2-font-size--largest;
     text-transform: uppercase;
     border-bottom: none;
     font-family: $title-font;
+    font-size: $h2-font-size--largest;
     font-weight: $font-weight--black;
+    @media (min-width: $large) {
+      font-size: $h2-font-size--max--largest;
+    }
   }
 
   h3 {
+    display: inline-block;
+    font-size: $h3-font-size--larger;
     @media (min-width: $large) {
       font-size: $h3-font-size--max--larger;
     }
-    font-size: $h3-font-size--larger;
-    display: inline-block;
 
     &:after {
       z-index: -1;
@@ -158,64 +149,64 @@ main {
   }
 
   h4 {
+    text-transform: uppercase;
+    font-size: $h4-font-size--larger;
     @media (min-width: $large) {
       font-size: $h4-font-size--max--larger;
     }
-    font-size: $h4-font-size--larger;
-    text-transform: uppercase;
   }
 
   h5 {
+    font-size: $h5-font-size--larger;
     @media (min-width: $large) {
       font-size: $h5-font-size--max--larger;
     }
-    font-size: $h5-font-size--larger;
   }
 }
 
 /* Helper to resize headings. Only applies at medium breakpoints. */
 .font-size--smaller {
   h1 {
+    font-size: $h1-font-size--smaller;
     @media (min-width: $large) {
       font-size: $h1-font-size--max--smaller;
     }
-    font-size: $h1-font-size--smaller;
   }
 
   h2 {
-    @media (min-width: $large) {
-      font-size: $h2-font-size--max--smaller;
-    }
     padding-bottom: none;
     border-bottom: none;
     font-size: $h2-font-size--smaller;
+    @media (min-width: $large) {
+      font-size: $h2-font-size--max--smaller;
+    }
   }
 
   h3 {
+    font-size: $h3-font-size--smaller;
     @media (min-width: $large) {
       font-size: $h3-font-size--max--smaller;
     }
-    font-size: $h3-font-size--smaller;
   }
 
   h4 {
+    font-size: $h4-font-size--smaller;
     @media (min-width: $large) {
       font-size: $h4-font-size--max--smaller;
     }
-    font-size: $h4-font-size--smaller;
   }
 
   h5 {
+    font-size: $h5-font-size--smaller;
     @media (min-width: $large) {
       font-size: $h5-font-size--max--smaller;
     }
-    font-size: $h5-font-size--smaller;
   }
 
   h6 {
+    font-size: $h6-font-size--smaller;
     @media (min-width: $large) {
       font-size: $h6-font-size--max--smaller;
     }
-    font-size: $h6-font-size--smaller;
   }
 }

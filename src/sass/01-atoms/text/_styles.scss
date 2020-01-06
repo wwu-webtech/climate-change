@@ -3,30 +3,30 @@
  * 01-atoms/fonts/_styles.scss
  */
 @mixin font-size--smaller {
+  font-size: $p-font-size--smaller;
   @media (min-width: $large) {
     font-size: $p-font-size--max--smaller;
   }
-  font-size: $p-font-size--smaller;
 }
 .font-size--smaller {
   @include font-size--smaller;
 }
 
 @mixin font-size--regular {
-    @media (min-width: $large) {
-      font-size: $p-font-size--max;
-    }
-    font-size: $p-font-size;
+  font-size: $p-font-size;
+  @media (min-width: $large) {
+    font-size: $p-font-size--max;
+  }
 }
 .font-size--regular {
   @include font-size--regular;
 }
 
 @mixin font-size--larger {
+  font-size: $p-font-size--larger;
   @media (min-width: $large) {
     font-size: $p-font-size--max--larger;
   }
-  font-size: $p-font-size--larger;
 }
 .font-size--larger {
   @include font-size--larger;
