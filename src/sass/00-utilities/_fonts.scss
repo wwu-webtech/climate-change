@@ -2,13 +2,7 @@
  * @file
  * 00-utilities/fonts.scss
  */
-
-@function strip-unit($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
-  }
-  @return $number;
-}
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Fira+Sans:300,300i,400,400i,600,700,900|Montserrat:700,900|PT+Serif:400,700');
 
 // Font Family Variables
 $sans-serif: "Fira Sans", sans-serif;
@@ -42,11 +36,14 @@ $max-base-font-size--smaller: 18px;
 $max-base-font-size--larger: 26px;
 $max-base-font-size--largest: 54px;
 
-// View width for fluid typography
-$min-vw: 300px;
-$max-vw: 1300px;
-
 // Functions to calculate responsive font sizes
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
 @function responsive-font-size($scale) {
   $min: $min-base-font-size * $scale;
   $max: $max-base-font-size * $scale;

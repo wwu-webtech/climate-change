@@ -1,4 +1,20 @@
 /* Imports other stylesheets and outputs styles.css */
 
-@use '00-utilities/colors';
-@use '00-utilities/fonts';
+@import '00-utilities/normalize';
+@import '00-utilities/structure';
+@import '00-utilities/colors';
+@import '00-utilities/fonts';
+@import '00-utilities/transitions';
+
+@import '01-atoms/icons/icons';
+@import '01-atoms/icons/social-media-icons';
+@import '01-atoms/text/all';
+@import '01-atoms/text/headings';
+@import '01-atoms/text/paragraphs';
+@import '01-atoms/text/styles';
+@import '01-atoms/background-color';
+@import '01-atoms/logo';
+@import '01-atoms/page';
+
+
+@import '03-organisms/wwu-footer';

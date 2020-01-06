@@ -1,0 +1,13 @@
+/**
+* @file
+* 01-atoms/text/_all.scss
+*/
+
+html {
+  @media (min-width: $large) {
+    font-size: $p-font-size--max;
+  }
+  color: $black;
+  font-family: $sans-serif;
+  font-size: $p-font-size;
+}
