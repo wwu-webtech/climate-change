@@ -8,16 +8,8 @@ $logo-height--stacked: 170px;
 $logo-width--larger: 306px;
 $logo-height--larger: 154px;
 $logo-height--stacked--larger: 196px;
-$logo-width--horizontal: 400px;
-$logo-height--horiztonal: 100px;
 
 .logo {
-  @media (min-width: $large) {
-    width: $logo-width--larger;
-    height: $logo-height--larger;
-  }
-  width: $logo-width;
-  height: $logo-height;
   padding: $standard-spacing;
   background-color: $dark-blue;
 
@@ -34,10 +26,6 @@ $logo-height--horiztonal: 100px;
   }
 
   &.make-waves {
-    @media (min-width: $large) {
-      width: $logo-width--larger;
-      height: $logo-width--larger;
-    }
     width: $logo-width;
     height: $logo-width;
   }

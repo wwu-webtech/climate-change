@@ -1,0 +1,27 @@
+/**
+* @file
+* 04-illustration/_sky.scss
+*/
+
+#sky {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .layer01 {
+    background: linear-gradient($dark-blue, $sky-blue);
+  }
+
+  .layer02 {
+    opacity: 0.25;
+    background: radial-gradient(ellipse at center, mix($sky-blue, white, 50%), $sky-blue 60%);
+  }
+}

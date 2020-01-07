@@ -1,0 +1,17 @@
+/**
+* @file
+* 01-atoms/_article.scss
+*/
+article {
+  position: relative;
+  max-width: $max-content-width;
+  margin-right: $standard-spacing;
+  margin-left: $standard-spacing;
+  padding: ($standard-spacing * 4) ($standard-spacing * 10);
+  background: transparentize($white, 0.5);
+
+  @media (min-width: $large) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

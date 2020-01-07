@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;

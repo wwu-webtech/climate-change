@@ -1,0 +1,24 @@
+/**
+* @file
+* 04-illustration/_mountain.scss
+*/
+$mountain-offset-from-top: 50vh;
+
+#mountain {
+  margin-top: $mountain-offset-from-top;
+  background: $snow-gray;
+
+  svg {
+    width: 200%;
+    margin-top: -($mountain-offset-from-top / 2);
+    margin-left: 50%;
+    transform: translatex(-50%);
+    @media (min-width: $small) {
+      width: 100%;
+    }
+  }
+
+  article {
+    margin-top: -($mountain-offset-from-top / 2);
+  }
+}

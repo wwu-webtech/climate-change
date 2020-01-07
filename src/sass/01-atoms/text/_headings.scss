@@ -16,7 +16,7 @@ h5,
 h6 {
   margin: $heading-margin-top 0 $heading-margin-bottom;
   color: $blue;
-  font-family: $heading-font-family;
+  font-family: $condensed;
   line-height: $heading-line-height;
 }
 h1 {
@@ -26,11 +26,12 @@ h1 {
   text-align: centere;
   text-transform: uppercase;
   color: $white;
-  font-family: $condensed;
-  font-size: $h1-font-size;
+  font-family: $title-font;
+  font-size: $h1-font-size--largest;
   font-weight: $font-weight--bold;
+  line-height: 1em;
   @media (min-width: $large) {
-    font-size: $h1-font-size--max;
+    font-size: $h1-font-size--max--largest;
   }
 }
 h2 {
@@ -80,87 +81,6 @@ h5 + h6 {
 main {
   h2 {
     padding-bottom: ($standard-spacing * 1.5);
-  }
-}
-
-.sans-serif-headings {
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $sans-serif;
-  }
-}
-
-.big-bold-headings {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $sans-serif;
-  }
-
-  h1 {
-    text-transform: uppercase;
-    border-bottom: none;
-    font-family: $title-font;
-    font-size: $h1-font-size--largest;
-    font-weight: $font-weight--black;
-    @media (min-width: $large) {
-      font-size: $h1-font-size--max--largest;
-    }
-
-    &:after {
-      display: none;
-    }
-  }
-
-  h2 {
-    text-transform: uppercase;
-    border-bottom: none;
-    font-family: $title-font;
-    font-size: $h2-font-size--largest;
-    font-weight: $font-weight--black;
-    @media (min-width: $large) {
-      font-size: $h2-font-size--max--largest;
-    }
-  }
-
-  h3 {
-    display: inline-block;
-    font-size: $h3-font-size--larger;
-    @media (min-width: $large) {
-      font-size: $h3-font-size--max--larger;
-    }
-
-    &:after {
-      z-index: -1;
-      display: block;
-      width: 110%;
-      height: 30px;
-      margin-left: 50%;
-      content: "";
-      transform: translate(-50%, -18px);
-      background-color: transparentize($blue, 0.9);
-    }
-  }
-
-  h4 {
-    text-transform: uppercase;
-    font-size: $h4-font-size--larger;
-    @media (min-width: $large) {
-      font-size: $h4-font-size--max--larger;
-    }
-  }
-
-  h5 {
-    font-size: $h5-font-size--larger;
-    @media (min-width: $large) {
-      font-size: $h5-font-size--max--larger;
-    }
   }
 }
 
