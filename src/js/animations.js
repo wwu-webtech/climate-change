@@ -6,6 +6,7 @@ const loadAnimation = anime({
   delay: anime.stagger(1000),
 })
 
+/*
 const scrollAnimation = anime({
   targets: '.logo',
   translateY: '-242px',
@@ -14,6 +15,7 @@ const scrollAnimation = anime({
   autoplay: false,
   duration: 1,
 });
+*/
 
 function getScrollPercent() {
   const scrollTop = window.scrollY;

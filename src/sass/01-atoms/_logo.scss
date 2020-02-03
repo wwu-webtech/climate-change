@@ -16,8 +16,10 @@ $logo-height--stacked--larger: 196px;
   &.stacked {
     @media (min-width: $large) {
       height: $logo-height--stacked--larger;
+      width: $logo-width--larger;
     }
     height: $logo-height--stacked;
+    width: $logo-width;
   }
 
   svg {

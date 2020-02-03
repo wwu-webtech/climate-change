@@ -7,10 +7,16 @@ animationToggle.onclick = function() {
     animationToggle.classList.remove('animations-enabled');
     animationToggle.classList.add('animations-disabled');
     animationToggle.innerHTML = 'Enable animations';
+    animationState.innerText = "disabled";
+    animationsOn = false;
   }
   else {
     animationToggle.classList.remove('animations-disabled');
     animationToggle.classList.add('animations-enabled');
     animationToggle.innerHTML = 'Disable animations';
+    animationState.innerText = "enabled";
+    animationsOn = true;
+
+    animateSnow(snow);
   }
 }

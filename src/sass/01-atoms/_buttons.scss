@@ -5,17 +5,16 @@
 button {
   background: transparent;
   color: $white;
-  border: solid 2px white;
+  border: solid $border-width white;
   text-transform: uppercase;
   padding: $standard-spacing;
 
   &:focus {
-    border: dotted 2px white;
+    border: dotted $border-width white;
     background-color: transparentize($dark-blue, 0.5);
   }
 
   &:active {
-    box-shadow: 2px 2px 2px black;
-    border-color: magenta;
+    transform: translate($border-width, $border-width);
   }
 }

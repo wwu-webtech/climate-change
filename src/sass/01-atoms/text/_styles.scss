@@ -33,13 +33,13 @@
 }
 
 .credits {
-  font-size: 0.8em;
   text-transform: uppercase;
+  font-size: 0.8em;
 }
 
 .tagline {
-  font-style: italic;
   margin-bottom: $double-spacing;
+  font-style: italic;
 }
 
 .title-decorative-word {
@@ -48,4 +48,5 @@
   font-size: 0.5em;
   font-weight: $font-weight--light;
   font-style: italic;
+  line-height: 1em;
 }

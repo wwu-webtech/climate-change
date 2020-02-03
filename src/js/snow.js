@@ -1,9 +1,9 @@
 (function() {
-  var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+  var animateSnow = window.animateSnow || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
   function(callback) {
     window.setTimeout(callback, 1000 / 60);
   };
-  window.requestAnimationFrame = requestAnimationFrame;
+  window.animateSnow = animateSnow;
 })();
 
 function snow() {
@@ -55,7 +55,10 @@ function snow() {
     ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
     ctx.fill();
   }
-  requestAnimationFrame(snow);
+
+  if (animationsOn == true) {
+    animateSnow(snow);
+  }
 };
 
 function reset(flake) {
@@ -107,6 +110,4 @@ mY = -100
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-if (animationsOn == true) {
-  initSnow();
-}
+initSnow();
