@@ -16,11 +16,13 @@ header {
   }
 
   .logo {
+    @media (min-width: $large) {
+      left: calc(50% - #{$logo-width--larger / 2});
+    }
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: calc(50% - #{$logo-width / 2});
     max-width: 50vw;
     max-height: 50vw;
-    transform: translatex(-50%);
   }
 }

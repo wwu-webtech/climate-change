@@ -4,14 +4,79 @@
 */
 article {
   position: relative;
+  z-index: 2;
   max-width: $max-content-width;
   margin-right: $standard-spacing;
   margin-left: $standard-spacing;
-  padding: ($standard-spacing * 4) ($standard-spacing * 10);
-  background: transparentize($white, 0.5);
+  padding: $standard-spacing;
 
   @media (min-width: $large) {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+  }
+}
+
+.article-01 {
+  background-color: $snow-gray;
+}
+
+.intro {
+  .circle-photo {
+    margin: 0 auto $double-spacing;
+
+    @media (min-width: 581px) {
+      float: left;
+      margin-top: $double-spacing;
+      margin-right: $double-spacing;
+
+      shape-outside: circle();
+    }
+  }
+}
+
+.interview {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+}
+
+.speaker {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translatey(-100%);
+  color: $black;
+  font-size: $p-font-size--smaller;
+  font-weight: $font-weight--regular;
+}
+
+.interviewer,
+.interviewee {
+  position: relative;
+  width: 80%;
+  margin-top: 1em;
+  padding: $half-spacing;
+}
+
+.interviewer {
+  align-self: end;
+  text-align: right;
+  color: white;
+  border-radius: $border-radius--round-square 0 $border-radius--round-square $border-radius--round-square;
+  background: transparentize($darkest-blue, 0.2);
+  font-size: $p-font-size--smaller;
+}
+
+.interviewee {
+  border-radius: 0 $border-radius--round-square $border-radius--round-square $border-radius--round-square;
+  background: transparentize($white, 0.2);
+
+  .speaker {
+    left: 0;
   }
 }

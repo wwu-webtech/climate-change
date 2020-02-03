@@ -1,0 +1,21 @@
+/**
+* @file
+* 01-atoms/_buttons.scss
+*/
+button {
+  background: transparent;
+  color: $white;
+  border: solid 2px white;
+  text-transform: uppercase;
+  padding: $standard-spacing;
+
+  &:focus {
+    border: dotted 2px white;
+    background-color: transparentize($dark-blue, 0.5);
+  }
+
+  &:active {
+    box-shadow: 2px 2px 2px black;
+    border-color: magenta;
+  }
+}

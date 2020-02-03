@@ -35,8 +35,11 @@ h1 {
   }
 }
 h2 {
+  text-transform: uppercase;
   color: $dark-blue;
+  font-family: $title-font;
   font-size: $h2-font-size;
+  font-weight: $font-weight--bold;
   font-weight: $font-weight--bold;
   @media (min-width: $large) {
     font-size: $h2-font-size--max;
