@@ -13,7 +13,8 @@ html {
 }
 
 hr {
-  border-bottom: 1px;
+  border-bottom: 2px;
+  color: $white;
   width: 40%;
   margin: ($standard-spacing * 4) auto;
 }

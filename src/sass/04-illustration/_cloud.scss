@@ -1,0 +1,44 @@
+/**
+* @file
+* 04-illustration/_cloud.scss
+*/
+.cloud {
+  position: absolute;
+  width: 80vw;
+  height: 30vw;
+  background-image: url("../img/cloud.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cloud-01 {
+  top: $clouds-base-position-from-top;
+  left: -30%;
+  @media (min-width: $small) {
+    top: $clouds-base-position-from-top;
+  }
+}
+
+.cloud-02 {
+  top: $clouds-base-position-from-top;
+  right: -40%;
+  @media (min-width: $small) {
+    top: $clouds-base-position-from-top;
+  }
+}
+
+.cloud-03 {
+  top: $clouds-base-position-from-top + 7;
+  left: 0;
+  @media (min-width: $small) {
+    top: $clouds-base-position-from-top + 12;
+  }
+}
+
+.cloud-04 {
+  top: $clouds-base-position-from-top + 6;
+  right: -12%;
+  @media (min-width: $small) {
+    top: $clouds-base-position-from-top + 20;
+  }
+}

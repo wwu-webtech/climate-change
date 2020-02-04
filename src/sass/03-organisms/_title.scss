@@ -1,0 +1,52 @@
+/**
+* @file
+* 03-organisms/_header.scss
+*/
+.title {
+  @media (min-width: $large) {
+    min-height: calc(100vh - #{$logo-height--stacked--larger});
+  }
+  min-height: calc(100vh - #{$logo-height--stacked});
+  padding: $standard-spacing;
+  color: $white;
+  background-color: $black;
+
+  .title-text {
+    max-width: $max-content-width;
+    margin: auto;
+  }
+}
+
+.title-end {
+  background: linear-gradient(to bottom, $black, transparent);
+  height: $clouds-base-position-from-top - 55;
+
+  @media (min-width: $small) {
+    height: $clouds-base-position-from-top - 35;
+  }
+  @media (min-width: $medium) {
+    height: $clouds-base-position-from-top - 30;
+  }
+  @media (min-width: $large) {
+    height: $clouds-base-position-from-top - 10;
+  }
+
+  .logo {
+    position: sticky;
+    top: calc(50vh - #{$logo-height / 2});
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 50vw;
+    max-height: 50vw;
+
+    @media (min-width: $large) {
+      top: calc(50vh - #{$logo-height--larger / 2});
+    }
+  }
+}
+
+.animations-on {
+  .title-end {
+    height: 400vh;
+  }
+}

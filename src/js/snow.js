@@ -108,6 +108,6 @@ mX = -100,
 mY = -100
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = window.innerHeight * 3;
 
 initSnow();

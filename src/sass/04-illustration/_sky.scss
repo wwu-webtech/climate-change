@@ -4,7 +4,10 @@
 */
 
 #sky {
-  .layer {
+  position: relative;
+  
+  .sky-layer {
+    z-index: -1;
     position: absolute;
     top: 0;
     right: 0;

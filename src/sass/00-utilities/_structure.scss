@@ -20,7 +20,7 @@ $max-vw: 1300px;
 /* Breakpoints */
 $small: 581px;
 $medium: 841px;
-$large: $max-content-width;
+$large: 1300px;
 
 /* Grid */
 $small-screen-columns: $standard-spacing 1fr $standard-spacing;
@@ -42,3 +42,5 @@ $border-radius--square: 5px;
 /* Toggle/Menu Button Sizes */
 $toggle-size: 58px;
 $toggle-size--larger: 68px;
+
+$clouds-base-position-from-top: 120vh;

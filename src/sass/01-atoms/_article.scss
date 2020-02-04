@@ -2,15 +2,18 @@
 * @file
 * 01-atoms/_article.scss
 */
-article {
+.article {
   position: relative;
   z-index: 2;
+}
+
+article {
   max-width: $max-content-width;
   margin-right: $standard-spacing;
   margin-left: $standard-spacing;
   padding: $standard-spacing;
 
-  @media (min-width: $large) {
+  @media (min-width: $medium) {
     margin-right: auto;
     margin-left: auto;
   }
@@ -21,11 +24,10 @@ article {
   }
 }
 
-.article-01 {
-  background-color: $snow-gray;
-}
-
 .intro {
+  padding: $standard-spacing;
+  background-image: linear-gradient(to bottom, transparentize($white, 0.5), transparentize($white, 0.1));
+
   .circle-photo {
     margin: 0 auto $double-spacing;
 
@@ -51,6 +53,7 @@ article {
   right: 0;
   transform: translatey(-100%);
   color: $black;
+  text-shadow: 0 0 4px $white;
   font-size: $p-font-size--smaller;
   font-weight: $font-weight--regular;
 }
