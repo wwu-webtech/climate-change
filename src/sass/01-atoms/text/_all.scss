@@ -13,8 +13,7 @@ html {
 }
 
 hr {
-  border-bottom: 2px;
-  color: $white;
+  border: solid 1px transparentize($white, 0.5);
   width: 40%;
   margin: ($standard-spacing * 4) auto;
 }
