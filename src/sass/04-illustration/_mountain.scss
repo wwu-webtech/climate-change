@@ -5,8 +5,8 @@
 $mountain-ratio: 24.283vw;
 
 #mountain {
-  margin-top: -$mountain-ratio;
-
+  background-color: $sky-blue;
+  
   svg {
     display: block;
     width: 200%;
@@ -16,5 +16,9 @@ $mountain-ratio: 24.283vw;
     @media (min-width: $small) {
       width: 100%;
     }
+  }
+
+  &:after {
+    clip-path: url('#mountain-clip');
   }
 }

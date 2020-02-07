@@ -49,8 +49,13 @@
   font-weight: $font-weight--light;
   font-style: italic;
   line-height: 1em;
+  word-spacing: -$half-spacing;
 }
 
 .darkest-blue {
   color: $darkest-blue;
+}
+
+.white {
+  color: $white;
 }

@@ -28,7 +28,7 @@
 }
 
 .cloud-03 {
-  top: $clouds-base-position-from-top + 7;
+  top: $clouds-base-position-from-top + 3;
   left: 0;
   @media (min-width: $small) {
     top: $clouds-base-position-from-top + 12;
@@ -36,9 +36,9 @@
 }
 
 .cloud-04 {
-  top: $clouds-base-position-from-top + 6;
+  top: $clouds-base-position-from-top - 3;
   right: -12%;
   @media (min-width: $small) {
-    top: $clouds-base-position-from-top + 20;
+    top: $clouds-base-position-from-top + 10;
   }
 }

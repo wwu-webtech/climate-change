@@ -7,11 +7,35 @@
   z-index: 2;
 }
 
+.article-01 {
+  .intro {
+    background-color: $sky-blue;
+  }
+
+  .bio {
+    margin-top: $double-spacing;
+    padding: $double-spacing;
+    color: $white;
+    background-color: mix($sky-blue, $dark-blue, 30%);
+    font-size: $p-font-size--smaller;
+    border-radius: $border-radius--round-square;
+
+    h3 {
+      margin-top: 0;
+      color: $white;
+    }
+  }
+}
+
+.article-02 {
+  padding-top: $double-spacing;
+}
+
 article {
   max-width: $max-content-width;
   margin-right: $standard-spacing;
   margin-left: $standard-spacing;
-  padding: $standard-spacing;
+  padding-bottom: $double-spacing;
 
   @media (min-width: $medium) {
     margin-right: auto;
@@ -25,8 +49,7 @@ article {
 }
 
 .intro {
-  padding: $standard-spacing;
-  background-image: linear-gradient(to bottom, transparentize($white, 0.5), transparentize($white, 0.1));
+  padding: $double-spacing;
 
   .circle-photo {
     margin: 0 auto $double-spacing;
@@ -52,9 +75,8 @@ article {
   top: 0;
   right: 0;
   transform: translatey(-100%);
-  color: $black;
-  text-shadow: 0 0 4px $white;
-  font-size: $p-font-size--smaller;
+  color: $white;
+  font-size: $p-font-size;
   font-weight: $font-weight--regular;
 }
 
@@ -63,7 +85,7 @@ article {
   position: relative;
   width: 80%;
   margin-top: 1em;
-  padding: $half-spacing;
+  padding: 24px;
 }
 
 .interviewer {
@@ -72,7 +94,6 @@ article {
   color: white;
   border-radius: $border-radius--round-square 0 $border-radius--round-square $border-radius--round-square;
   background: transparentize($darkest-blue, 0.2);
-  font-size: $p-font-size--smaller;
 }
 
 .interviewee {

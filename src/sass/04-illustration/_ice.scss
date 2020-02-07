@@ -1,0 +1,19 @@
+/**
+* @file
+* 04-illustration/_ice.scss
+*/
+.icicle-container {
+  position: relative;
+}
+
+.icicles {
+  position: absolute;
+  z-index: -1;
+  top: 0.25em;
+  right: 0.1em;
+  width: 70px;
+  height: 140px;
+  background-image: url("../img/photo/ice.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
