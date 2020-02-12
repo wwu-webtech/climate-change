@@ -1,0 +1,23 @@
+/**
+* @file
+* 04-illustration/_hillside.scss
+*/
+.hillside {
+  position: relative;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, $sand-tan 50%, $tree-dark-green 90%);
+}
+
+.pond {
+  position: relative;
+  top: 0;
+  max-width: 33%;
+  margin: auto;
+  transform: translatex($standard-spacing);
+}
+
+.rocks {
+  position: absolute;
+  top: $standard-spacing * 3;
+  width: 100%;
+}
