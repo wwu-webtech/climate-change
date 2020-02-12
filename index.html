@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Material Icons -->
-  <!--link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Animate on Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -189,10 +189,15 @@
     <img src="src/img/svg/mountain.svg" alt="Peak of a snowy mountain">
   </div>
 
-  <div class="glacier grain-illustration">
+  <div style="background-color: #e8e8e8;" class="grain-bg">
     <h2>To be continued...</h2>
-    <p style="text-align: center;">Come again next week for another cool story (pun intended.)</p>
-    <img src="src/img/svg/glacier.svg" alt="Glacier formed below the mountain peak" data-aos="zoom-in">
+    <p style="text-align: center; margin-bottom: 0;">Come again next week for another cool story (pun intended.)</p>
+  </div>
+
+  <div class="glacier grain-illustration">
+    <div class="glacier-layer" data-aos="zoom-in" data-aos-delay="500"><img src="src/img/svg/glacier-layers/light-gray.svg" alt="Glacier formed below the mountain peak"></div>
+    <div class="glacier-layer" data-aos="zoom-in" data-aos-delay="1000"><img src="src/img/svg/glacier-layers/medium-gray.svg" alt=""></div>
+    <div class="glacier-down" data-aos="zoom-in" data-aos-delay="1500"><img src="src/img/svg/glacier-layers/dark-gray.svg" alt=""></div>
   </div>
 
   <div class="article article-02 grain-bg">
@@ -211,19 +216,19 @@
     </article>
   </div>
 
-  <div class="glacier grain-illustration">
-    <img src="src/img/svg/glacier.svg" alt="The same glacier as before, now feeding into a pond on a sandy hillside with scatered rocks">
+  <div class="glacier second grain-illustration">
+    <div class="glacier-layer"><img src="src/img/svg/glacier-layers/dark-gray.svg" alt="The same glacier as before, now feeding into a pond on a sandy hillside with scatered rocks"></div>
+    <div class="glacier-layer"><img src="src/img/svg/glacier-layers/medium-gray.svg" alt=""></div>
+    <div class="glacier-layer"><img src="src/img/svg/glacier-layers/light-gray.svg" alt=""></div>
   </div>
 
   <div class="hillside grain-illustration">
-    <div class="hill-shape">
-      <img src="src/img/svg/hill-cutout.svg" alt="">
-    </div>
+    <div class="hill-shape"><img src="src/img/svg/hill-cutout.svg" alt=""></div>
     <div  class="flowers--small">
       <img data-aos="fade-in" src="src/img/svg/small-flowers/light-green.svg" slt="small purple, green, and white flowers growing on the hill side">
-      <img data-aos="fade-in" src="src/img/svg/small-flowers/dark-green.svg" slt="">
-      <img data-aos="fade-in" src="src/img/svg/small-flowers/white.svg" slt="">
-      <img data-aos="fade-in" src="src/img/svg/small-flowers/purple.svg" slt="">
+      <img data-aos="fade-in" data-aos-delay="500" src="src/img/svg/small-flowers/dark-green.svg" slt="">
+      <img data-aos="fade-in" data-aos-delay="1000" src="src/img/svg/small-flowers/white.svg" slt="">
+      <img data-aos="fade-in" data-aos-delay="1500" src="src/img/svg/small-flowers/purple.svg" slt="">
     </div>
     <div class="pond">
       <img src="src/img/svg/pond.svg" alt="">
@@ -232,9 +237,9 @@
       <img src="src/img/svg/rocks.svg" alt="">
     </div>
     <div class="flowers--big">
-      <div class="first"><img data-aos="fade-up" src="src/img/svg/big-flowers/first.svg" slt="a dense thicket of growing purple wild flowers"></div>
-      <div class="second"><img data-aos="fade-up" src="src/img/svg/big-flowers/second.svg" slt=""></div>
-      <div class="third"><img data-aos="fade-up" src="src/img/svg/big-flowers/third.svg" slt=""></div>
+      <div class="first"><img data-aos="fade-up" data-aos-delay="1000" src="src/img/svg/big-flowers/first.svg" slt="a dense thicket of growing purple wild flowers"></div>
+      <div class="second"><img data-aos="fade-up" data-aos-delay="1200" src="src/img/svg/big-flowers/second.svg" slt=""></div>
+      <div class="third"><img data-aos="fade-up" data-aos-delay="1500" src="src/img/svg/big-flowers/third.svg" slt=""></div>
     </div>
   </div>
 </main>

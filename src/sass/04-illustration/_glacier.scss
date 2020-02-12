@@ -3,6 +3,23 @@
 * 04-illustration/_glacier.scss
 */
 .glacier {
-  background-color: $snow-gray;
+  position: relative;
+  min-height: 25vw;
   padding: $double-spacing 0;
+  background-color: $snow-gray;
+
+  &.second {
+    margin-bottom: -9vw;
+
+    .glacier-layer {
+      top: 5vw;
+    }
+  }
+}
+
+.glacier-layer {
+  position: absolute;
+  z-index: 1;
+  top: $double-spacing;
+  width: 100%;
 }
