@@ -2,10 +2,12 @@
 * @file
 * 04-illustration/_hillside.scss
 */
+$pond-ratio: 8.5vw;
+
 .hillside {
   position: relative;
-  min-height: 100vh;
-  background-image: linear-gradient(to bottom, $sand-tan 50%, $tree-dark-green 90%);
+  min-height: 38vw;
+  background-image: linear-gradient(to bottom, $sand-tan 30%, $grass-dark-green 50%);
 }
 
 .pond {
@@ -19,5 +21,30 @@
 .rocks {
   position: absolute;
   top: $standard-spacing * 3;
+  left: 0.3vw;
   width: 100%;
+}
+
+.flowers--small {
+  position: absolute;
+  top: $pond-ratio;
+  left: -2vw;
+  width: 100%;
+
+  img {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.flowers--big {
+  position: relative;
+
+  .first,
+  .second,
+  .third {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
