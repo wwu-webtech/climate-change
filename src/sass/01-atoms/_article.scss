@@ -16,9 +16,9 @@
     margin-top: $double-spacing;
     padding: $double-spacing;
     color: $white;
+    border-radius: $border-radius--round-square;
     background-color: mix($sky-blue, $dark-blue, 30%);
     font-size: $p-font-size--smaller;
-    border-radius: $border-radius--round-square;
 
     h3 {
       margin-top: 0;
@@ -29,9 +29,35 @@
 
 .article-02 {
   padding-top: $double-spacing;
+  background-color: $snow-gray;
+
+  h2 {
+    max-width: none;
+  }
+
+  p {
+    font-size: $p-font-size--smaller;
+  }
+
+  article {
+    max-width: none;
+
+    @media (min-width: $small) {
+      padding: $double-spacing;
+      column-count: 3;
+    }
+  }
 }
 
 .article-03 {
+  background-color: $snow-gray;
+  
+  h2 {
+    max-width: none;
+  }
+}
+
+.article-04 {
   background-color: $grass-dark-green;
 
   h2 {
