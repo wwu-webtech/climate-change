@@ -140,3 +140,10 @@ main {
     }
   }
 }
+
+.tagline {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $title-font;
+  font-size: $h3-font-size;
+}
