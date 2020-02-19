@@ -7,19 +7,20 @@
   min-height: 25vw;
   padding: $double-spacing 0;
   background-color: $snow-gray;
-
-  &.second {
-    //margin-bottom: -9vw;
-
-    .glacier-layer {
-      top: 5vw;
-    }
-  }
 }
 
 .glacier-layer {
   position: absolute;
-  z-index: 1;
   top: $double-spacing;
   width: 100%;
+
+  &.first {
+    top: 5.95vw;
+    left: 0.39vw;
+  }
+
+  &.second {
+    top: 1.65vw;
+    left: 0.17vw;
+  }
 }

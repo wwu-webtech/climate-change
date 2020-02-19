@@ -51,7 +51,7 @@
 
 .article-03 {
   background-color: $snow-gray;
-  
+
   h2 {
     max-width: none;
   }
@@ -115,7 +115,8 @@ article {
   right: 0;
   transform: translatey(-100%);
   color: $white;
-  font-size: $p-font-size;
+  text-shadow: 1px 1px 2px $darkest-blue;
+  font-size: $p-font-size--smaller;
   font-weight: $font-weight--regular;
 }
 

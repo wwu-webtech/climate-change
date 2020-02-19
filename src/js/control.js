@@ -14,9 +14,6 @@ animationToggle.onclick = function() {
     animationToggle.innerHTML = 'Enable animations';
     animationState.innerText = "disabled";
 
-    body.classList.add('animations-off');
-    body.classList.remove('animations-on');
-
     for (each of aosElements) {
       each.removeAttribute('data-aos');
     }
