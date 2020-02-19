@@ -5,12 +5,7 @@
 
 #snow {
   position: absolute;
-  top: $clouds-base-position-from-top + 10;
 
   mask-image: -webkit-gradient(linear, left top, left bottom,
   from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-
-  @media (min-width: $small) {
-    top: $clouds-base-position-from-top + 30;
-  }
 }
