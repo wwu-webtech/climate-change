@@ -31,7 +31,7 @@ var isInViewport = function (elem) {
   var bounding = elem.getBoundingClientRect();
   var halfway = window.innerHeight / 2;
   return (
-    bounding.top <g= halfway
+    bounding.top <= halfway
   );
 };
 
