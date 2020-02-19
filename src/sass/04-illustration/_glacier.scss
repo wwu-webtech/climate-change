@@ -7,6 +7,11 @@
   min-height: 25vw;
   padding: $double-spacing 0;
   background-color: $snow-gray;
+
+  @media (max-width: $small) {
+    width: 300vw;
+    min-height: 75vw;
+  }
 }
 
 .glacier-layer {
@@ -17,10 +22,18 @@
   &.first {
     top: 5.95vw;
     left: 0.39vw;
+
+    @media (max-width: $small) {
+      top: 19vw;
+    }
   }
 
   &.second {
     top: 1.65vw;
     left: 0.17vw;
+
+    @media (max-width: $small) {
+      top: 6vw;
+    }
   }
 }
