@@ -52,3 +52,11 @@ $logo-height--stacked--larger: 196px;
     fill: $white;
   }
 }
+
+.western-home-link:focus {
+  outline: none;
+}
+
+.western-home-link:focus > .logo {
+  outline: dotted $border-width $white;
+}
