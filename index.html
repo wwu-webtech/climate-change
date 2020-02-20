@@ -26,15 +26,15 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-1652480-1');
+    </script>
+    <script>
     /**
     * Function that registers a click on an outbound link in Analytics.
-    * This function takes a valid URL string as an argument, and uses that URL string
-    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-    * using 'navigator.sendBeacon' in browser that support it.
+    * This function takes a valid URL string as an argument, and uses that URL * string as the event label. Setting the transport method to 'beacon' lets * the hit be sent using 'navigator.sendBeacon' in browser that support it.
     */
     var getOutboundLink = function(url) {
       gtag('event', 'click', {
-        'event_category': 'outbound',
+        'event_category': 'climateChange',
         'event_label': url,
         'transport_type': 'beacon',
         'event_callback': function(){document.location = url;}
@@ -237,7 +237,7 @@
               A Tarheel born and bred, Khan received her bachelor’s degree from the University of North Carolina at Chapel Hill. After hearing the call of the mountains, she went west to get her master’s degree and then her doctorate at the
               University of Colorado at Boulder’s Institute of Arctic and Alpine Research; she then completed post-doc work at CU-Boulder’s National Snow and Ice Data Center. She has studied lake bottoms in the McMurdo Dry Valleys of Antarctica and
               snow fields in the Alps of New Zealand, and is now teaching her first class at Western, “Global Environmental Change in the Cryosphere.” Her latest paper is on the impact of the U.S. Antarctic Program’s Palmer Station on its
-              surrounding snow and ice fields. She can be reached at <a href="mailto:alia.khan@wwu.edu">alia.khan@wwu.edu</a>.
+              surrounding snow and ice fields. She can be reached at <a href="mailto:alia.khan@wwu.edu" onclick="getOutboundLink('mailto:alia.khan@wwu.edu'); return false;">alia.khan@wwu.edu</a>.
             </p>
           </div>
 
@@ -250,7 +250,7 @@
             </p>
             <p>&nbsp;</p>
             <p class="text-align-center">
-              <a href="https://huxley.wwu.edu/" class="green square button" target="_blank">Find out more about Huxley <span class="material-icons" aria-hidden="true">open_in_new</span></a>
+              <a href="https://huxley.wwu.edu/" onclick="getOutboundLink('https://huxley.wwu.edu/'); return false;" class="green square button" target="_blank">Find out more about Huxley <span class="material-icons" aria-hidden="true">open_in_new</span></a>
             </p>
           </div>
         </article>
@@ -298,7 +298,7 @@
           </p>
           <p>&nbsp;</p>
           <p class="text-align-center">
-            <a href="https://huxley.wwu.edu/" class="blue square button" target="_blank">College of Science and Engineering <span class="material-icons">open_in_new</span></a>
+            <a href="https://huxley.wwu.edu/" onclick="getOutboundLink('https://huxley.wwu.edu/'); return false;" class="blue square button" target="_blank">College of Science and Engineering <span class="material-icons">open_in_new</span></a>
           </p>
         </div>
       </article>
