@@ -11,6 +11,18 @@ $large-radius--regular: 300px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  margin: 0 auto $double-spacing;
+  box-shadow: $shadow;
+
+  &.left {
+    @media (min-width: 581px) {
+      float: left;
+      margin-top: $double-spacing;
+      margin-right: $double-spacing;
+
+      shape-outside: circle();
+    }
+  }
 
   &.small {
     width: $small-radius--small;

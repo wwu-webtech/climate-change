@@ -1,0 +1,42 @@
+/**
+* @file
+* 01-atoms/circle-photo/_circle-photo.scss
+*/
+.photo {
+  margin-bottom: $standard-spacing;
+  box-shadow: $shadow;
+
+  img {
+    max-width: 100%;
+  }
+
+  &.medium {
+    max-width: 60%;
+
+    @media (min-width: $medium) {
+      max-width: 50%;
+    }
+  }
+
+  &.left {
+    float: left;
+    margin-right: $standard-spacing;
+    margin-left: -($standard-spacing * 3) + $half-spacing;
+
+    @media (min-width: $medium) {
+      margin-right: $double-spacing;
+      margin-left: -10%;
+    }
+  }
+
+  &.right {
+    float: right;
+    margin-right: -($standard-spacing * 3) + $half-spacing;
+    margin-left: $standard-spacing;
+
+    @media (min-width: $medium) {
+      margin-right: -10%;
+      margin-left: $double-spacing;
+    }
+  }
+}

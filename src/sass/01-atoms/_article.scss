@@ -32,26 +32,40 @@
   }
 
   blockquote {
-    margin-top: $double-spacing * 2;
-    margin-bottom: $double-spacing * 2;
+    margin-top: $double-spacing;
+    margin-bottom: $double-spacing;
     padding: $double-spacing;
     color: $white;
     background-color: $dark-blue;
+    box-shadow: $shadow;
     font-weight: 300;
 
 
     &:nth-of-type(odd) {
-      margin-left: -10%;
+      margin-left: -($standard-spacing * 3) + $half-spacing;
       border-radius: 0 $border-radius--round-square $border-radius--round-square $border-radius--round-square;
+
+      @media (min-width: $medium) {
+        margin-left: -10%;
+      }
     }
 
     &:nth-of-type(even) {
-      margin-right: -10%;
+      margin-right: -($standard-spacing * 3) + $half-spacing;
       border-radius: $border-radius--round-square 0 $border-radius--round-square $border-radius--round-square;
+
+      @media (min-width: $medium) {
+        margin-right: -10%;
+      }
     }
 
     &:last-of-type {
       margin-bottom: -($standard-spacing *6);
+    }
+
+    @media (min-width: $medium) {
+      margin-top: $double-spacing * 2;
+      margin-bottom: $double-spacing * 2;
     }
   }
 }
@@ -118,18 +132,6 @@ article {
 
 .body {
   padding: $double-spacing;
-
-  .circle-photo {
-    margin: 0 auto $double-spacing;
-
-    @media (min-width: 581px) {
-      float: left;
-      margin-top: $double-spacing;
-      margin-right: $double-spacing;
-
-      shape-outside: circle();
-    }
-  }
 }
 
 .interview {
