@@ -16,11 +16,10 @@
 
 .glacier-layer {
   position: absolute;
-  top: $double-spacing;
   width: 100%;
 
   &.first {
-    top: 5.95vw;
+    top: 5.5vw;
     left: 0.39vw;
 
     @media (max-width: $small) {
@@ -29,7 +28,7 @@
   }
 
   &.second {
-    top: 1.65vw;
+    top: 1.25vw;
     left: 0.17vw;
 
     @media (max-width: $small) {

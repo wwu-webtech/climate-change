@@ -37,7 +37,7 @@ var isInViewport = function (elem) {
 
 /* trigger ice core animation */
 
-var ice_core = document.getElementById('ice-core');
+var ice_core = document.getElementsByClassName('ice-core')[0];
 window.addEventListener('scroll', function (event) {
   if (isInViewport(ice_core)) {
     ice_core.classList.add('animate');
