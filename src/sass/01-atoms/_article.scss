@@ -10,7 +10,7 @@
 .article-01 {
   h2 {
     color: mix($sky-blue, $white, 10%);
-    text-shadow: -2px -2cpx 0 transparentize($darkest-blue, 0.5);
+    text-shadow: -2px -2px 0px transparentize($darkest-blue, 0.1);
   }
 
   .body {
