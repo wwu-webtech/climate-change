@@ -3,6 +3,8 @@
 * 01-atoms/call-out/_call-out.scss
 */
 .call-out-box {
+  margin-bottom: $double-spacing * 2;
+  
   p {
     font-weight: $font-weight--regular;
   }
