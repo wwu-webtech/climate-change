@@ -74,28 +74,21 @@
 .article-02 {
   background-color: $snow-gray;
 
-  h2 {
-    max-width: none;
+  .h2 {
+    display: block;
+    width: 700px;
+    margin: auto;
+    margin-bottom: -6vw;
+    transform: translatey(-6vw);
 
-    .first-word {
-      display: inline-block;
-      transform: rotate(-7deg) translatey(-8vw);
-    }
-
-    .second-word {
-      display: inline-block;
-      transform: rotate(-3deg) translatey(-11vw);
-    }
-
-    .third-word {
-      display: inline-block;
-      transform: rotate(2deg) translatex(10vw) translatey(-10.5vw);
-      font-size: 0.8em;
+    @media (max-width: $max-content-width) {
+      width: 80%;
     }
   }
-
+  
   .tagline {
-    margin-top: -11vw;
+    margin-top: $double-spacing;
+    margin-bottom: -$double-spacing;
     text-transform: none;
     color: $dark-blue;
     font-family: $sans-serif;
