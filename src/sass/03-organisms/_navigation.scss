@@ -1,0 +1,73 @@
+/**
+* @file
+* 03-organisms/_navigation.scss
+*/
+.chapter-navigation {
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 0;
+  padding: $double-spacing $double-spacing $double-spacing 0;
+  transform: translatey(-50%);
+  background: transparent;
+  font-size: $p-font-size--smaller;
+
+  h2 {
+    margin-bottom: $half-spacing;
+    padding: $half-spacing;
+    text-align: left;
+    word-spacing: initial;
+    text-transform: none;
+    color: $white;
+    background-color: transparentize($darkest-blue, 0.5);
+    text-shadow: none;
+    font-family: $sans-serif;
+    font-size: $p-font-size--smaller;
+  }
+
+  ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+
+    a {
+      display: block;
+      width: 60%;
+      padding: $half-spacing $standard-spacing;
+      text-align: right;
+      text-decoration: none;
+      color: white;
+      background-color: transparentize($darkest-blue, 0.5);
+
+      &.current {
+        color: $lightest-green;
+      }
+    }
+  }
+
+
+  li {
+    padding: $standard-spacing 0;
+  }
+}
+
+.chapter {
+  visibility: hidden;
+  transition: all ease 0.2s;
+  opacity: 0;
+
+  .material-icons {
+    position: relative;
+    top: 2px;
+    float: left;
+    font-size: $p-font-size--smaller;
+  }
+}
+
+a:hover .chapter,
+.current .chapter {
+  visibility: visible;
+  opacity: 1;
+}
