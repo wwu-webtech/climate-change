@@ -4,7 +4,7 @@
 */
 .ice-core-article {
   display: grid;
-  max-width: 1300px;
+  max-width: $large;
 
   grid-column-gap: $double-spacing;
   grid-template-areas: "ice left"

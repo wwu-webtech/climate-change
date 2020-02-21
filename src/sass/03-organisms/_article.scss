@@ -1,7 +1,8 @@
 /**
 * @file
-* 01-atoms/_article.scss
+* 03-organisms/_article.scss
 */
+
 .article {
   position: relative;
   z-index: 2;
@@ -10,7 +11,7 @@
 .article-01 {
   h2 {
     color: mix($sky-blue, $white, 10%);
-    text-shadow: -2px -2px 0px transparentize($darkest-blue, 0.1);
+    text-shadow: -2px -2px 0 transparentize($darkest-blue, 0.1);
   }
 
   .body {
@@ -71,24 +72,89 @@
 }
 
 .article-02 {
-  padding-top: $double-spacing;
   background-color: $snow-gray;
 
   h2 {
     max-width: none;
-  }
 
-  p {
-    font-size: $p-font-size--smaller;
-  }
-
-  article {
-    max-width: none;
-
-    @media (min-width: $small) {
-      padding: $double-spacing;
-      column-count: 3;
+    .first-word {
+      display: inline-block;
+      transform: rotate(-7deg) translatey(-8vw);
     }
+
+    .second-word {
+      display: inline-block;
+      transform: rotate(-3deg) translatey(-11vw);
+    }
+
+    .third-word {
+      display: inline-block;
+      transform: rotate(2deg) translatex(10vw) translatey(-10.5vw);
+      font-size: 0.8em;
+    }
+  }
+
+  .tagline {
+    margin-top: -11vw;
+    text-transform: none;
+    color: $dark-blue;
+    font-family: $sans-serif;
+    font-size: $h3-font-size--larger;
+    font-weight: $font-weight--bold;
+    line-height: 1em;
+
+    .title-decorative-word {
+      word-spacing: initial;
+    }
+
+    @media (max-width: $medium) {
+      font-size: $h4-font-size--smaller;
+    }
+  }
+
+  .nino-arrow {
+    display: inline-block;
+    color: $blue;
+
+    &.material-icons {
+      transform-origin: left top;
+      font-size: 4em;
+    }
+
+    &.first {
+      transform: translate(1em, 2.21em) rotate(220deg);
+    }
+
+    &.second {
+      transform: translate(0.05em, 2.2em) scaleX(-1) rotate(220deg);
+    }
+
+    &.second.material-icons {
+      font-size: 3.5em;
+    }
+  }
+
+  .nino {
+    display: inline-block;
+    margin-top: $standard-spacing;
+    margin-bottom: $double-spacing;
+    margin-left: 51%;
+    padding: $standard-spacing;
+    transform: translatex(-50%) rotate(-5deg);
+    border-radius: 5px;
+    background-color: transparentize($light-green, 0.3);
+    font-family: montserrat;
+    font-size: 1.2em !important;
+
+    &.second {
+      transform: translatex(-50%) rotate(4deg);
+    }
+  }
+
+  blockquote {
+    padding: $double-spacing;
+    background-color: transparentize($white, 0.5);
+    font-weight: $font-weight--light;
   }
 }
 

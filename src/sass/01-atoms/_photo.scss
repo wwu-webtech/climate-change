@@ -4,12 +4,11 @@
 */
 .photo {
   margin-bottom: $standard-spacing;
-  box-shadow: $shadow;
-  border-radius: $border-radius--square;
 
   img {
     max-width: 100%;
     border-radius: $border-radius--square;
+    box-shadow: $shadow;
   }
 
   &.medium {
@@ -20,10 +19,18 @@
     }
   }
 
+  &.large {
+    max-width: 70%;
+  }
+
+  &.center {
+    margin: 0 auto ($standard-spacing * 3);
+  }
+
   &.left {
     float: left;
     margin-right: $standard-spacing;
-    margin-left: -($standard-spacing * 3) + $half-spacing;
+    margin-left: -$standard-spacing;
 
     @media (min-width: $medium) {
       margin-right: $double-spacing;
@@ -41,4 +48,10 @@
       margin-left: $double-spacing;
     }
   }
+}
+
+.photo-caption {
+  margin-bottom: -$double-spacing;
+  padding: $standard-spacing;
+  font-size: $p-font-size--smaller;
 }

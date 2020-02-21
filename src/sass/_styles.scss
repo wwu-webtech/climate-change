@@ -14,7 +14,6 @@
 @import '01-atoms/text/headings';
 @import '01-atoms/text/paragraphs';
 @import '01-atoms/text/styles';
-@import '01-atoms/article';
 @import '01-atoms/background-color';
 @import '01-atoms/buttons';
 @import '01-atoms/call-out';
@@ -24,6 +23,7 @@
 @import '01-atoms/photo';
 
 
+@import '03-organisms/article';
 @import '03-organisms/navigation';
 @import '03-organisms/title';
 @import '03-organisms/site-footer';
