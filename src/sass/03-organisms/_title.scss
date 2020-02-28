@@ -21,6 +21,7 @@
   background: linear-gradient(to bottom, $black, transparent);
 
   .logo {
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: calc(50vh - #{$logo-height / 2});
     left: 50%;
