@@ -8,7 +8,13 @@ html {
     box-sizing: border-box;
   }
 
-  scroll-behavior: smooth;
+  &.animations-on {
+    scroll-behavior: smooth;
+  }
+
+  &.animations-off {
+    scroll-behavior: auto;
+  }
 }
 
 main {
