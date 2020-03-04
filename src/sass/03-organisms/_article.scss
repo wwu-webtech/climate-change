@@ -152,13 +152,48 @@
 }
 
 .article-03 {
-  article {
-    max-width: $large;
-    column-count: 2;
-  }
-
   h2 {
     max-width: none;
+  }
+
+  .body {
+    padding: $double-spacing;
+    background-color: transparentize($white, 0.2);
+  }
+
+  blockquote {
+    background-color: transparentize($rock-gray, 0.2);
+    color: $white;
+    font-weight: $font-weight--light;
+    padding: $standard-spacing;
+    border-radius: $border-radius--square;
+    width: 100vw;
+    margin-left: -$standard-spacing * 3;
+    z-index: 0;
+
+    &:nth-of-type(odd) {
+      transform: rotate(-15deg);
+    }
+
+    &:nth-of-type(even) {
+      transform: rotate(15deg);
+    }
+
+    @media (min-width: $medium) {
+      width: calc(100% + #{$standard-spacing * 8});
+      margin-left: -($standard-spacing * 4);
+    }
+  }
+
+  .photo {
+    position: relative;
+    z-index: 1;
+    margin-bottom: $double-spacing;
+
+    .photo-caption {
+      background-color: $white;
+      margin-top: $standard-spacing;
+    }
   }
 }
 

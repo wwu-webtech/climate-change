@@ -57,3 +57,11 @@ chapterToggle.onclick = function() {
     chapterToggle.innerHTML = '<span class="material-icons" aria-hidden="true">menu</span><span class="button-text visually-hidden">Open the chapter navigation menu</span>';
   }
 }
+
+/* Glacier */
+var glacier = document.querySelector('.glacier');
+window.addEventListener('scroll', function (event) {
+  if (isInViewport(glacier)) {
+    glacier.classList.add('animate');
+  }
+}, false);

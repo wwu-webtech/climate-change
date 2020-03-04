@@ -5,6 +5,7 @@
 
 #sky {
   position: relative;
+  overflow: hidden;
 
   .sky-layer {
     z-index: -1;

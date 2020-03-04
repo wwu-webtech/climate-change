@@ -13,6 +13,13 @@
   min-height: 25vw;
   padding: $double-spacing 0;
 
+  &.animate {
+    animation-name: shrink;
+    animation-duration: 45s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
   @media (max-width: $small) {
     width: 300vw;
     min-height: 75vw;
@@ -39,5 +46,15 @@
     @media (max-width: $small) {
       top: 6vw;
     }
+  }
+}
+
+
+@keyframes shrink {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
   }
 }
