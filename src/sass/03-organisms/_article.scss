@@ -85,7 +85,7 @@
       width: 80%;
     }
   }
-  
+
   .tagline {
     margin-top: $double-spacing;
     margin-bottom: -$double-spacing;
@@ -152,7 +152,10 @@
 }
 
 .article-03 {
-  background-color: $snow-gray;
+  article {
+    max-width: $large;
+    column-count: 2;
+  }
 
   h2 {
     max-width: none;

@@ -57,12 +57,3 @@ chapterToggle.onclick = function() {
     chapterToggle.innerHTML = '<span class="material-icons" aria-hidden="true">menu</span><span class="button-text visually-hidden">Open the chapter navigation menu</span>';
   }
 }
-
-/* trigger ice core animation */
-
-var ice_core = document.getElementsByClassName('ice-core')[0];
-window.addEventListener('scroll', function (event) {
-  if (isInViewport(ice_core)) {
-    ice_core.classList.add('animate');
-  }
-}, false);

@@ -2,11 +2,16 @@
 * @file
 * 04-illustration/_glacier.scss
 */
+.glacier-bg {
+  background-color: $snow-gray;
+}
+
 .glacier {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: $double-spacing;
   min-height: 25vw;
   padding: $double-spacing 0;
-  background-color: $snow-gray;
 
   @media (max-width: $small) {
     width: 300vw;
