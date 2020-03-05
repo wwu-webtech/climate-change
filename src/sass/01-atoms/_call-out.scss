@@ -11,7 +11,13 @@
 
   &.cse {
     padding: $standard-spacing;
-    background-color: mix($blue, $snow-gray, 50%);
     border-radius: $border-radius--square;
+    background-color: mix($blue, $snow-gray, 50%);
+  }
+
+  &.research {
+    margin: 0;
+    padding: $standard-spacing;
+    background-color: $snow-gray;
   }
 }

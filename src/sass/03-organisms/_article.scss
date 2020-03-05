@@ -154,10 +154,14 @@
 .article-03 {
   h2 {
     max-width: none;
+    transform: rotate(-5deg) !important;
+  }
+
+  .tagline {
+    text-shadow: -1px -1px 0 transparentize($white, 0.5);
   }
 
   .body {
-    padding: $double-spacing;
     background-color: transparentize($white, 0.2);
   }
 
@@ -168,16 +172,8 @@
     padding: $standard-spacing;
     border-radius: $border-radius--square;
     width: 100vw;
-    margin-left: -$standard-spacing * 3;
+    margin-left: -$standard-spacing;
     z-index: 0;
-
-    &:nth-of-type(odd) {
-      transform: rotate(-15deg);
-    }
-
-    &:nth-of-type(even) {
-      transform: rotate(15deg);
-    }
 
     @media (min-width: $medium) {
       width: calc(100% + #{$standard-spacing * 8});
@@ -193,6 +189,20 @@
     .photo-caption {
       background-color: $white;
       margin-top: $standard-spacing;
+    }
+  }
+}
+
+.animations-on {
+  .article-03 {
+    blockquote {
+      &:nth-of-type(odd) {
+        transform: rotate(-15deg);
+      }
+
+      &:nth-of-type(even) {
+        transform: rotate(15deg);
+      }
     }
   }
 }
@@ -228,7 +238,13 @@ article {
 }
 
 .body {
-  padding: $double-spacing;
+  padding-top: $double-spacing;
+  padding-bottom: $double-spacing;
+
+  p {
+    padding-left: $double-spacing;
+    padding-right: $double-spacing;
+  }
 }
 
 .interview {
