@@ -13,13 +13,6 @@
   min-height: 25vw;
   padding: $double-spacing 0;
 
-  &.animate {
-    animation-name: shrink;
-    animation-duration: 45s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-
   @media (max-width: $small) {
     width: 300vw;
     min-height: 75vw;
@@ -41,7 +34,7 @@
 
   &.second {
     top: 1.25vw;
-    left: 0.17vw;
+    left: 0.18vw;
 
     @media (max-width: $small) {
       top: 6vw;
@@ -49,6 +42,16 @@
   }
 }
 
+.animations-on {
+  .glacier {
+    &.animate {
+      animation-name: shrink;
+      animation-duration: 45s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+}
 
 @keyframes shrink {
   from {
