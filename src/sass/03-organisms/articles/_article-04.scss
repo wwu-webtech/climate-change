@@ -150,14 +150,44 @@
     }
   }
 
-
-
   .tagline {
     font-weight: $font-weight--light;
     line-height: 1.1em;
 
     .title-decorative-word {
       word-spacing: 0.1em;
+    }
+  }
+
+  .call-out-box {
+    padding: $double-spacing;
+    background-color: $dark-green;
+
+    p {
+      color: $white;
+      font-weight: $font-weight--light;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: $light-green;
+    }
+
+    .button {
+      @include button-box-shadow($lightest-green);
+      margin-top: $double-spacing;
+      color: $grass-dark-green;
+      background-color: $light-green;
+      font-weight: $font-weight--regular;
+
+      &:hover,
+      &:focus,
+      &:active {
+        @include button-box-shadow($light-green);
+        color: $white;
+        border-color: $lightest-green;
+        background-color: $green;
+      }
     }
   }
 }
