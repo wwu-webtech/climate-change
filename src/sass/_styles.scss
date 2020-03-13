@@ -23,13 +23,17 @@
 @import '01-atoms/photo';
 @import '01-atoms/video';
 
-
-@import '03-organisms/article';
+@import '03-organisms/articles/article';
+@import '03-organisms/articles/article-01';
+@import '03-organisms/articles/article-02';
+@import '03-organisms/articles/article-03';
+@import '03-organisms/articles/article-04';
 @import '03-organisms/navigation';
 @import '03-organisms/title';
 @import '03-organisms/site-footer';
 @import '03-organisms/wwu-footer';
 
+@import '04-illustration/butterfly';
 @import '04-illustration/cloud';
 @import '04-illustration/glacier';
 @import '04-illustration/grain';

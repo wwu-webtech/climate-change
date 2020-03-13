@@ -42,6 +42,13 @@
   }
 }
 
+.glacier-washout {
+  position: absolute;
+  top: 1.7vw;
+  width: 93%;
+  right: 0;
+}
+
 .animations-on {
   .glacier {
     &.animate {
