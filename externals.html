@@ -1,0 +1,61 @@
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="How Western Washington University's faculty, staff, and students are fighting global change." />
+
+  <meta property="og:url" content="https://www.wwu.edu/climatechange" />
+  <meta property="og:title" content="Stories of Climate Change - Research and Action" />
+  <meta property="og:description" content="Alia Khan, an assistant professor of Environmental Sciences in Western Washington University’s Huxley College of the Environment, is on a mission to find the whitest snow and ice on the planet." />
+  <meta property="og:image" content="src/img/fb/Global-Warming-Illustration_1080x.jpg" />
+
+  <link rel="shortcut icon" href="https://www.wwu.edu/themes/contrib/ashlar/favicon.ico" type="image/vnd.microsoft.icon" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/css/styles.css" media="all" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1652480-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1652480-1');
+  </script>
+  <script>
+  /**
+  * Function that registers a click on an outbound link in Analytics.
+  * This function takes a valid URL string as an argument, and uses that URL * string as the event label. Setting the transport method to 'beacon' lets * the hit be sent using 'navigator.sendBeacon' in browser that support it.
+  */
+  var getOutboundLink = function(url) {
+    gtag('event', 'click', {
+      'event_category': 'climateChange',
+      'event_label': url,
+      'transport_type': 'beacon',
+      'event_callback': function(){document.location = url;}
+    });
+  }
+  </script>
+  <!-- Siteimprove Analytics -->
+  <script type="text/javascript">
+  /*<![CDATA[*/
+  (function() {
+    var sz = document.createElement('script');
+    sz.type = 'text/javascript';
+    sz.async = true;
+    sz.src = '//siteimproveanalytics.com/js/siteanalyze_66356517.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(sz, s);
+  })();
+  /*]]>*/
+  </script>

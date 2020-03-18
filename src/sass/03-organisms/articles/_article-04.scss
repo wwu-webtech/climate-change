@@ -8,7 +8,7 @@
 
   .article-title {
     position: relative;
-    max-width: none;
+    max-width: $large;
 
     .butterfly-wrapper {
       right: 26%;
@@ -161,7 +161,7 @@
 
   .call-out-box {
     padding: $double-spacing;
-    background-color: $dark-green;
+    background-color: $tree-darkest-green;
 
     p {
       color: $white;

@@ -3,15 +3,70 @@
 
 <head>
   <title>Stories of Climate Change | Western Washington University</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- externals -->
+  <meta name="description" content="How Western Washington University's faculty, staff, and students are fighting global change." />
+
+  <meta property="og:url" content="https://www.wwu.edu/climatechange" />
+  <meta property="og:title" content="Stories of Climate Change - Research and Action" />
+  <meta property="og:description" content="Alia Khan, an assistant professor of Environmental Sciences in Western Washington University’s Huxley College of the Environment, is on a mission to find the whitest snow and ice on the planet." />
+  <meta property="og:image" content="src/img/fb/Global-Warming-Illustration_1080x.jpg" />
+
+  <link rel="shortcut icon" href="https://www.wwu.edu/themes/contrib/ashlar/favicon.ico" type="image/vnd.microsoft.icon" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Animate on Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="src/css/styles.css" media="all" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1652480-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1652480-1');
+  </script>
+  <script>
+  /**
+  * Function that registers a click on an outbound link in Analytics.
+  * This function takes a valid URL string as an argument, and uses that URL * string as the event label. Setting the transport method to 'beacon' lets * the hit be sent using 'navigator.sendBeacon' in browser that support it.
+  */
+  var getOutboundLink = function(url) {
+    gtag('event', 'click', {
+      'event_category': 'climateChange',
+      'event_label': url,
+      'transport_type': 'beacon',
+      'event_callback': function(){document.location = url;}
+    });
+  }
+  </script>
+  <!-- Siteimprove Analytics -->
+  <script type="text/javascript">
+  /*<![CDATA[*/
+  (function() {
+    var sz = document.createElement('script');
+    sz.type = 'text/javascript';
+    sz.async = true;
+    sz.src = '//siteimproveanalytics.com/js/siteanalyze_66356517.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(sz, s);
+  })();
+  /*]]>*/
+  </script>
 
 </head>
 
 <body id="climate-change" class="animations-on">
-
   <main>
     <div class="chapter-navigation closed">
       <button class="chapter-navigation-toggle closed"><span class="material-icons" aria-hidden="true">menu</span><span class="button-text visually-hidden">Open the chapter navigation menu</span></button>
@@ -22,8 +77,8 @@
           <li><a href="#chapter-02"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 2</a></li>
           <li><a href="#chapter-03"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 3</a></li>
           <li><a href="#chapter-04"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 4</a></li>
-          <li><a href="#chapter-05"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 5</a></li>
-          <!--li><a href="#chapter-06"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 6</a></li>
+          <!--li><a href="#chapter-05"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 5</a></li>
+          <li><a href="#chapter-06"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 6</a></li>
           <li><a href="#chapter-07"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 7</a></li>
           <li><a href="#chapter-08"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 8</a></li>
           <li><a href="#chapter-09"><span class="chapter"><span class="material-icons" aria-hidden="true">keyboard_arrow_right</span></span> 9</a></li>
@@ -539,78 +594,12 @@
             <p class="text-align-center"><a class="green square button" href="https://www.nps.gov/getinvolved/index.htm" onclick="getOutboundLink('https://www.nps.gov/getinvolved/index.htm'); return false;">Get Involved with Butterflies</a></p>
           </div>
         </article>
-      </div>
-    </section>
-    <section id="chapter-05">
-      <div class="tree-container top grain-illustration">
-        <div class="trees background"><img src="src/img/svg/tree-hills--half.svg" alt="tree lined hill sides"></div>
-        <div class="trees midground">
-          <div class="trees--dark"><img src="src/img/svg/tree-hills--dark.svg" alt=""></div>
-          <div class="trees--burnt">
-            <div data-aos-offset="400" data-aos="fade-in" data-aos-delay="500" data-aos-duration="3000"><img src="src/img/svg/tree-hills--burnt.svg" alt=""></div>
-            <div class="fires">
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000"><img src="src/img/fire-02.png" alt="fire errupting across the trees"></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="350" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="650" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="750" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="800" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="850" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="900" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="950" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="1050" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-        <div class="trees foreground">
-          <div class="trees--light"><img src="src/img/svg/tree-hills--light.svg" alt=""></div>
-          <div class="trees--detailed"><img src="src/img/svg/tree-set-01.png" alt=""></div>
-          <div class="trees--burnt">
-            <div data-aos-offset="400" data-aos="fade-in" data-aos-delay="500" data-aos-duration="3000"><img src="src/img/svg/tree-hills--burnt.svg" alt=""></div>
-            <div class="fires">
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000"><img src="src/img/fire-02.png" alt="fire errupting across the trees"></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="350" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="550" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="650" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="750" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="800" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="850" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="900" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="950" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-              <div class="fire" data-aos-offset="400" data-aos="fade-in" data-aos-delay="1050" data-aos-duration="1000"><img src="src/img/fire-02.png" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="article article-05 grain-bg">
-        <div class="burn-bg grain-bg" data-aos-offset="400" data-aos="fade-in" data-aos-delay="500" data-aos-duration="3000">
-          <article id="megafire">
-            <h2 class="article-title">Megafire</h2>
+        <div>
+          <article>
+            <h2 data-aos="fade-in">To be continued</h2>
+
+            <p class="text-align-center">Check back next week for the next installment...</p>
           </article>
         </div>
       </div>
@@ -737,5 +726,6 @@
   <script src="src/js/control.js"></script>
   <script src="src/js/snow.js"></script>
   <script src="src/js/menu.js"></script>
+</body>
 
-  </html>
+</html>

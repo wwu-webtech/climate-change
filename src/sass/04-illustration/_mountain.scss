@@ -17,8 +17,4 @@ $mountain-ratio: 24.283vw;
       width: 100%;
     }
   }
-
-  &:after {
-    clip-path: url('#mountain-clip');
-  }
 }
