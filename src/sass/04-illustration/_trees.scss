@@ -52,20 +52,36 @@
 .trees--detailed {
   position: absolute;
   top: 5vw;
+
+  img {
+    width: 100%;
+  }
 }
 
 .trees--dark,
 .trees--light,
 .trees--burnt {
-  width: 100%;
   position: absolute;
   top: 0;
+  width: 100%;
+}
+
+.trees--end {
+  position: relative;
+  min-height: 30vw;
+  margin-top: -10vw;
+
+  .trees--detailed {
+    top: 8vw;
+    left: 3vw;
+    width: 90%;
+  }
 }
 
 .fire {
   position: absolute;
-  opacity: 0.9;
   max-width: 20vw;
+  opacity: 0.9;
 }
 
 .fire img {
@@ -73,92 +89,92 @@
 }
 
 .fire:nth-of-type(1) {
-  left: 50%;
   bottom: 0;
+  left: 50%;
 }
 
 .fire:nth-of-type(2) {
-  left: 40%;
   bottom: 1vw;
+  left: 40%;
 }
 
 .fire:nth-of-type(3) {
-  left: 29%;
   bottom: 2vw;
+  left: 29%;
   img {
     transform: scale(115%) scalex(-1);
   }
 }
 
 .fire:nth-of-type(4) {
-  left: 20%;
   bottom: 1vw;
+  left: 20%;
   img {
     transform: scale(90%) scalex(-1);
   }
 }
 
 .fire:nth-of-type(5) {
-  left: 22%;
   bottom: 8vw;
+  left: 22%;
 }
 
 .fire:nth-of-type(6) {
-  left: 10%;
   bottom: 1vw;
+  left: 10%;
   img {
     transform: scale(130%) scalex(-1);
   }
 }
 
 .fire:nth-of-type(7) {
-  left: 9%;
   bottom: 11vw;
+  left: 9%;
   img {
     transform: scale(110%);
   }
 }
 
 .fire:nth-of-type(8) {
-  left: 14%;
   bottom: 16vw;
+  left: 14%;
   img {
     transform: scale(110%) scalex(-1);
   }
 }
 
 .fire:nth-of-type(9) {
-  left: 8%;
   bottom: 20vw;
+  left: 8%;
 }
 
 .fire:nth-of-type(10) {
-  left: -4%;
   bottom: 22vw;
+  left: -4%;
   img {
     transform: scale(110%) scalex(-1);
   }
 }
 
 .fire:nth-of-type(11) {
-  left: -4%;
   bottom: 12vw;
+  left: -4%;
   img {
     transform: scale(130%);
   }
 }
 
 .fire:nth-of-type(12) {
-  left: -4%;
   bottom: 2vw;
+  left: -4%;
   img {
     transform: scale(140%) scalex(-1);
   }
 }
 
 .fire:nth-of-type(13) {
-  left: 85%;
   bottom: 17vw;
+  left: 85%;
   img {
     transform: scalex(-1);
   }
@@ -166,69 +182,69 @@
 
 
 .fire:nth-of-type(14) {
-  left: 58%;
   bottom: 8vw;
+  left: 58%;
 }
 
 .fire:nth-of-type(15) {
-  left: 60%;
   bottom: 2vw;
+  left: 60%;
   img {
     transform: scale(140%) scalex(-1);
   }
 }
 
 .fire:nth-of-type(16) {
-  left: 67%;
   bottom: 13vw;
+  left: 67%;
   img {
     transform: scale(105%);
   }
 }
 
 .fire:nth-of-type(17) {
-  left: 72%;
   bottom: 5vw;
+  left: 72%;
   img {
     transform: scale(112%);
   }
 }
 
 .fire:nth-of-type(18) {
-  left: 78%;
   bottom: 1vw;
+  left: 78%;
   img {
     transform: scalex(-1);
   }
 }
 
 .fire:nth-of-type(19) {
-  left: 78%;
   bottom: 0.5vw;
+  left: 78%;
   img {
     transform: scalex(-1);
   }
 }
 
 .fire:nth-of-type(20) {
-  left: 78%;
   bottom: 1vw;
+  left: 78%;
   img {
     transform: scalex(-1);
   }
 }
 
 .fire:nth-of-type(21) {
-  left: 80%;
   bottom: 8vw;
+  left: 80%;
   img {
     transform: scale(90%);
   }
 }
 
 .fire:nth-of-type(22) {
-  left: 75%;
   bottom: 15vw;
+  left: 75%;
   img {
     transform: scale(110%);
   }
