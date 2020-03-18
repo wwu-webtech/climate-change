@@ -4,9 +4,44 @@
 */
 
 .article-05 {
+  color: $white;
   background-color: $tree-light-green;
 
-  .burn-bg {    
+  .burn-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient($burnt-tree-black, $tree-darkest-green);
     background-color: $burnt-tree-black;
+  }
+
+  article {
+    position: relative;
+    padding-top: $triple-spacing;
+  }
+
+  .article-title {
+    color: $yellow;
+    background: -webkit-linear-gradient($fire-yellow, $fire-orange, $fire-red);
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 0 transparentize($red, 0.9);
+    font-size: $h1-font-size--largest;
+
+    -webkit-text-fill-color: transparent;
+
+    @media (min-width: $large) {
+      font-size: $h1-font-size--max--largest;
+    }
+  }
+
+  .tagline {
+    font-size: $h5-font-size--larger;
+    line-height: 1.2em;
+  }
+
+  .title-decorative-word {
+    word-spacing: 0.1em;
   }
 }
