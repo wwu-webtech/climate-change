@@ -19,18 +19,14 @@
 
 .title-end {
   background: linear-gradient(to bottom, $black, transparent);
+}
 
-  .logo {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: calc(50vh - #{$logo-height / 2});
-    left: 50%;
-    transform: translate(-50%);
-    max-width: 50vw;
-    max-height: 50vw;
 
-    @media (min-width: $large) {
-      top: calc(50vh - #{$logo-height--larger / 2});
-    }
-  }
+.western-home-link {
+  width: $logo-width;
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 10vw;
+  margin-left: 50%;
+  transform: translatex(-50%);
 }
