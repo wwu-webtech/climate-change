@@ -68,23 +68,25 @@
   }
 }
 
-.trees--dark,
-.trees--light,
-.trees--burnt {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 .trees--end {
   position: relative;
   min-height: 30vw;
+  background-color: $tree-darkest-green;
 
   .trees--detailed {
     top: 8vw;
     left: 3vw;
     width: 90%;
   }
+}
+
+
+.trees--dark,
+.trees--light,
+.trees--burnt {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .fire {
