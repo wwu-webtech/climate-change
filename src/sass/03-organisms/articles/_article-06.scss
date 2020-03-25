@@ -2,3 +2,27 @@
 * @file
 * 03-organisms/articles/_article-06.scss
 */
+
+.article-06 {
+  margin-top: -$half-spacing;
+  background-color: $tree-medium-green;
+
+  .article-title {
+    color: $white;
+    text-shadow: -2px -2px 0 transparentize($darkest-blue, 0.1);
+  }
+
+  p {
+    font-weight: $font-weight--light;
+  }
+
+  article {
+    border-radius: $border-radius--round-square;
+    background-color: $water-dark-blue;
+    background-image: linear-gradient(to bottom, $water-dark-blue, $water-medium-blue, $water-light-blue);
+  }
+
+  article > div {
+    padding: $double-spacing;
+  }
+}

@@ -4,7 +4,7 @@
 */
 .river-container {
   position: relative;
-  min-height: 81.5vw;
+  min-height: 81vw;
   background-color: $tree-darkest-green;
 
   .trees--detailed {
@@ -21,7 +21,14 @@
   width: 9.7vw;
 }
 
-.waterfall-froth {
+.waterfall-froth--back {
+  position: absolute;
+  top: 44.5vw;
+  left: 43vw;
+  width: 12vw;
+}
+
+.waterfall-froth--front {
   position: absolute;
   top: 45.5vw;
   left: 44vw;
@@ -64,20 +71,20 @@
 }
 
 .salmon.first {
-  top: 18%;
+  top: 15%;
   left: 15%;
   width: 29%;
 }
 
 .salmon.second {
-  top: 40%;
-  left: 34%;
+  top: 47%;
+  left: 37%;
   width: 23%;
 }
 
 .salmon.third {
-  top: 54%;
-  left: 55%;
+  top: 53%;
+  left: 59%;
   width: 18%;
 }
 
