@@ -25,4 +25,32 @@
   article > div {
     padding: $double-spacing;
   }
+
+  blockquote {
+    margin-top: $double-spacing;
+    margin-bottom: $double-spacing;
+    padding: $double-spacing;
+    background-color: transparentize(mix($water-light-blue, $white), 0.1);
+    box-shadow: $shadow;
+    font-weight: 300;
+
+
+    &:nth-of-type(odd) {
+      margin-left: -($standard-spacing * 3) + $half-spacing;
+      border-radius: 0 $border-radius--round-square $border-radius--round-square $border-radius--round-square;
+
+      @media (min-width: $medium) {
+        margin-left: -10%;
+      }
+    }
+
+    &:nth-of-type(even) {
+      margin-right: -($standard-spacing * 3) + $half-spacing;
+      border-radius: $border-radius--round-square 0 $border-radius--round-square $border-radius--round-square;
+
+      @media (min-width: $medium) {
+        margin-right: -10%;
+      }
+    }
+  }
 }
