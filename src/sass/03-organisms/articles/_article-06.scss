@@ -56,6 +56,11 @@
     }
   }
 
+  .photo {
+    position: relative;
+    z-index: 1;
+  }
+
   .photo-caption {
     margin-top: $standard-spacing;
     margin-bottom: $standard-spacing;
@@ -150,9 +155,9 @@
 }
 
 .to-be-continued {
-  color: $white;
-  padding-bottom: $double-spacing;
   margin-bottom: 0;
+  padding-bottom: $double-spacing;
+  color: $white;
 
   h2 {
     color: $lightest-green;

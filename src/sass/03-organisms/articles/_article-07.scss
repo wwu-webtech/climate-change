@@ -1,0 +1,48 @@
+/**
+* @file
+* 03-organisms/articles/_article-07.scss
+*/
+.article-07 {
+  background-color: $tree-light-green;
+  background-image: linear-gradient(to bottom, $tree-light-green, $tree-medium-green);
+
+  > div {
+    padding-bottom: 72px;
+  }
+
+  article {
+    max-width: $max-content-width + ($triple-spacing * 2);
+    padding: $triple-spacing;
+    border-radius: $border-radius--round-square;
+    background-color: $brick-red;
+  }
+
+  .article-title {
+    color: $white;
+    text-shadow: 2px 2px 0 $black;
+  }
+
+  .tagline {
+    color: $white;
+    text-shadow: 2px 2px 0 $black;
+  }
+}
+
+#chapter-07 {
+  .call-out-box {
+    h3 {
+      color: $lightest-green;
+    }
+    width: 100%;
+    margin: $standard-spacing;
+    padding: $double-spacing;
+    color: white;
+    border-radius: $border-radius--round-square;
+    background-color: $street-gray;
+
+    @media (min-width: $small) {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/**
+* @file
+* 04-illustration/_city.scss
+*/
+#chapter-07 img {
+  width: 100%;
+}
+
+.city-hill,
+.city-town {
+  position: relative;
+  background-color: $tree-medium-green;
+}
+
+.campus {
+  position: absolute;
+  top: 10vw;
+  right: 6vw;
+  width: 64%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.deer {
+  position: absolute;
+  top: -10vw;
+  right: 5vw;
+  width: 40%;
+  max-width: 400px;
+
+  @media (min-width: 840px) {
+    top: -6vw;
+    right: 25vw;
+  }
+}
+
+.street {
+  width: 90%;
+  max-width: 2000px;
+}
+
+.city-flex {
+  display: flex;
+  align-items: center;
+}
+
+.factory {
+  align-self: end;
+
+  justify-self: start;
+}
+
+.call-out-wrapper {
+  z-index: 1;
+  flex: 0 1 80%;
+}
