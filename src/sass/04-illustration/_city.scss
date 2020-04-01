@@ -17,6 +17,7 @@
   top: 10vw;
   right: 6vw;
   width: 64%;
+  max-width: 1400px;
 
   img {
     width: 100%;
@@ -25,14 +26,13 @@
 
 .deer {
   position: absolute;
-  top: -10vw;
-  right: 5vw;
+  top: -11vw;
+  right: -7vw;
   width: 40%;
   max-width: 400px;
 
-  @media (min-width: 840px) {
-    top: -6vw;
-    right: 25vw;
+  @media (min-width: $medium) {
+    top: -7vw;
   }
 }
 
@@ -47,12 +47,78 @@
 }
 
 .factory {
+  position: relative;
+  z-index: 2;
+  flex: 0 1 20%;
   align-self: end;
+  margin-left: $standard-spacing;
 
-  justify-self: start;
+  @media (min-width: 841px) {
+    margin-left: 5vw;
+  }
+
+
+  .building {
+    position: relative;
+    width: 100%;
+  }
+
+  .smoke {
+    position: absolute;
+    width: 43%;
+
+    &:nth-of-type(1) {
+      top: -6%;
+      left: 29%;
+      opacity: 0.9;
+    }
+
+    &:nth-of-type(2) {
+      top: -10%;
+      left: 27%;
+      opacity: 0.9;
+    }
+
+    &:nth-of-type(3) {
+      top: -13%;
+      left: 24%;
+      opacity: 0.7;
+    }
+
+    &:nth-of-type(4) {
+      top: -15%;
+      left: 22%;
+      opacity: 0.5;
+    }
+
+    &:nth-of-type(5) {
+      top: -17%;
+      left: 19%;
+      opacity: 0.3;
+    }
+  }
+}
+
+.street {
+  position: relative;
+}
+
+.box-truck {
+  position: absolute;
+  right: 45%;
+  bottom: 12.5%;
+  width: 7vw;
+}
+
+.truck {
+  position: absolute;
+  right: 20%;
+  bottom: 15%;
+  width: 8vw;
 }
 
 .call-out-wrapper {
   z-index: 1;
   flex: 0 1 80%;
+  margin-bottom: 4.8vw;
 }
