@@ -6,6 +6,17 @@
   background-color: $tree-light-green;
   background-image: linear-gradient(to bottom, $tree-light-green, $tree-medium-green);
 
+  a {
+    color: $darkest-blue;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: mix($black, $brick-red, 50%);
+    }
+  }
+
   > div {
     padding-bottom: 72px;
   }
