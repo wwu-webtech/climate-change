@@ -30,16 +30,16 @@
   }
 
   blockquote {
-    background-image: linear-gradient(to right, $water-light-blue, $water-dark-blue);
+    color: $white;
+    border-radius: $border-radius--round-square;
+    background-color: $blue;
     box-shadow: inset -2px -2px 4px transparentize($black, 0.8);
 
     p {
       padding: $standard-spacing;
-      font-weight: $font-weight--regular;
 
       @media (min-width: 581px) {
         padding: $double-spacing;
-
       }
     }
   }
