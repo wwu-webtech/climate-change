@@ -5,3 +5,129 @@
 .article-08 {
   background: linear-gradient($water-light-blue, $water-medium-blue, $water-dark-blue);
 }
+
+
+/* Marsh rough */
+.city-flex {
+  padding-bottom: 12vw;
+}
+
+.factory {
+  flex: 0 1 50%;
+  bottom: -15vw;
+}
+
+@media (min-width: 841px) {
+  .city-flex {
+  padding-bottom: 6vw;
+}
+  .factory {
+    flex: 0 1 20%;
+    bottom: -8.5vw;
+  }
+}
+
+.marsh {
+  position: relative;
+  min-height: 20vw;
+}
+
+.reeds {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  left: 20vw;
+  transform: translatey(-100%);
+}
+
+.grass {
+  position: absolute;
+  top: 0;
+  left: 40vw;
+  transform: translatey(-100%);
+  width: 200vw;
+}
+
+.pool {
+  position: absolute;
+  width: 45vw;
+  left: -7vw;
+}
+
+.lilly-frogs {
+  position: relative;
+  width: 240vw;
+  max-width: 800px;
+  left: 40vw;
+}
+
+.frog {
+  position: absolute;
+}
+
+.frog.small {
+  width: 7vw;
+  top: -40%;
+  left: 7%;
+  max-width: 40px;
+}
+
+.frog.large {
+  width: 10vw;
+  top: -60%;
+  right: 70%;
+  max-width: 50px;
+}
+
+
+@media (min-width: 841px) {
+  .reeds {
+    width: 40vw;
+    left: 30vw;
+  }
+  .grass {
+    left: 30vw;
+    width: 70vw;
+  }
+
+  .pool {
+    left: -13vw;
+  }
+
+.lilly-frogs {
+  position: relative;
+  width: 60vw;
+  left: 30vw;
+}
+
+.frog.small {
+  width: 2.2vw;
+  top: -0.7vw;
+  left: 4.7vw;
+}
+
+.frog.large {
+  width: 3vw;
+  top: -0.5vw;
+  right: 23.5vw;
+}
+
+}
+
+.open,
+.shut {
+  position: absolute;
+  width: 100%;
+}
+
+.shut {
+  display: none;
+}
+
+.heron {
+  width: 3vw;
+}
+
+.cormorants {
+  width: 3vw;
+}

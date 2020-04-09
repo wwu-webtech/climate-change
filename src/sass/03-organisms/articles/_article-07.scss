@@ -19,19 +19,15 @@
     box-shadow: $shadow;
   }
 
-  .article-title {
-    color: $white;
-    text-shadow: 2px 2px 0 $black;
-  }
-
-  .tagline {
+  .article-title,
+  h3 {
     color: $white;
     text-shadow: 2px 2px 0 $black;
   }
 
   blockquote {
     color: $white;
-    border-radius: $border-radius--round-square;
+    border-radius: $border-radius--square;
     background-color: $blue;
     box-shadow: inset -2px -2px 4px transparentize($black, 0.8);
 
