@@ -3,131 +3,83 @@
 * 03-organisms/articles/_article-08.scss
 */
 .article-08 {
-  background: linear-gradient($water-light-blue, $water-medium-blue, $water-dark-blue);
-}
+  background: linear-gradient($sand-tan, $water-light-blue);
 
+  .article-title,
+  .tagline {
+    color: $mud-brown;
+    text-shadow: 1px 1px 0 $mud-dark-brown;
+  }
 
-/* Marsh rough */
-.city-flex {
-  padding-bottom: 12vw;
-}
+  .article-title {
+    font-size: calc(36px + 64 * ((100vw - 300px) / 1000));
 
-.factory {
-  flex: 0 1 50%;
-  bottom: -15vw;
-}
+    @media (min-width: $medium) {
+      font-size: 80px;
+    }
+  }
 
-@media (min-width: 841px) {
-  .city-flex {
-  padding-bottom: 6vw;
-}
-  .factory {
-    flex: 0 1 20%;
-    bottom: -8.5vw;
+  .title-decorative-word {
+    word-spacing: 0;
+  }
+
+  .tagline {
+    font-size: calc(21.832px + 16.524 * ((100vw - 300px) / 1000));
+
+    @media (min-width: $medium) {
+      font-size: 35px;
+    }
+  }
+
+  blockquote {
+    width: 100%;
+    margin-left: 0;
+    padding: $standard-spacing;
+    color: $white;
+    border-radius: $border-radius--round-square;
+    background-color: $mud-brown;
+
+    @media (min-width: $small) {
+      padding: $double-spacing;
+    }
+  }
+
+  .photo {
+    position: relative;
+    z-index: 1;
+  }
+
+  .mud.photo-caption {
+    margin-top: $standard-spacing;
+    margin-bottom: $standard-spacing;
+    color: $white;
+    border-radius: $border-radius--square;
+    background-color: transparentize(mix($sand-tan, $mud-brown, 20%), 0.1);
+  }
+
+  .call-out-box {
+    width: 80%;
+    padding: $standard-spacing;
+    text-align: center;
+    color: $black;
+    border-radius: $border-radius--round-square;
+    background-color: $sand-tan;
+    margin: auto;
+
+    @media (min-width: $small) {
+      padding: $double-spacing;
+    }
   }
 }
 
-.marsh {
-  position: relative;
-  min-height: 20vw;
-}
+#chapter-08 {
+  .to-be-continued {
+    padding-bottom: 0;
+    color: $darkest-blue;
+    background: linear-gradient($water-light-blue, $water-medium-blue);
 
-.reeds {
-  position: absolute;
-  width: 70vw;
-  top: 0;
-  left: 20vw;
-  transform: translatey(-100%);
-}
-
-.grass {
-  position: absolute;
-  top: 0;
-  left: 40vw;
-  transform: translatey(-100%);
-  width: 200vw;
-}
-
-.pool {
-  position: absolute;
-  width: 45vw;
-  left: -7vw;
-}
-
-.lilly-frogs {
-  position: relative;
-  width: 240vw;
-  max-width: 800px;
-  left: 40vw;
-}
-
-.frog {
-  position: absolute;
-}
-
-.frog.small {
-  width: 7vw;
-  top: -40%;
-  left: 7%;
-  max-width: 40px;
-}
-
-.frog.large {
-  width: 10vw;
-  top: -60%;
-  right: 70%;
-  max-width: 50px;
-}
-
-
-@media (min-width: 841px) {
-  .reeds {
-    width: 40vw;
-    left: 30vw;
+    h2 {
+      color: $dark-blue;
+    }
   }
-  .grass {
-    left: 30vw;
-    width: 70vw;
-  }
-
-  .pool {
-    left: -13vw;
-  }
-
-.lilly-frogs {
-  position: relative;
-  width: 60vw;
-  left: 30vw;
-}
-
-.frog.small {
-  width: 2.2vw;
-  top: -0.7vw;
-  left: 4.7vw;
-}
-
-.frog.large {
-  width: 3vw;
-  top: -0.5vw;
-  right: 23.5vw;
-}
-
-}
-
-.open,
-.shut {
-  position: absolute;
-  width: 100%;
-}
-
-.shut {
-  display: none;
-}
-
-.heron {
-  width: 3vw;
-}
-
-.cormorants {
-  width: 3vw;
 }

@@ -45,19 +45,27 @@
 .city-flex {
   display: flex;
   align-items: center;
+  padding-bottom: 12vw;
+
+  @media (min-width: $medium) {
+    padding-bottom: 6vw;
+  }
 }
 
-.factory {
+.factory { 
+  bottom: -15vw;
+  flex: 0 1 50%;
   position: relative;
   z-index: 2;
   flex: 0 1 20%;
   align-self: end;
   margin-left: $standard-spacing;
 
-  @media (min-width: 841px) {
+  @media (min-width: $medium) {
     margin-left: 5vw;
+    bottom: -8.5vw;
+    flex: 0 1 20%;
   }
-
 
   .building {
     position: relative;
