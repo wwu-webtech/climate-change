@@ -7,8 +7,8 @@
 
   .article-title,
   .tagline {
-    color: $mud-brown;
-    text-shadow: 1px 1px 0 $mud-dark-brown;
+    color: $mud-dark-brown;
+    text-shadow: none;
   }
 
   .article-title {
@@ -54,7 +54,7 @@
     margin-bottom: $standard-spacing;
     color: $white;
     border-radius: $border-radius--square;
-    background-color: transparentize(mix($sand-tan, $mud-brown, 20%), 0.1);
+    background-color: $tree-medium-green;
   }
 
   .call-out-box {

@@ -57,6 +57,16 @@
       left: 30vw;
       width: 60vw;
     }
+
+    .pool {
+      left: 31%;
+      width: 25vw;
+      top: 11%;
+    }
+  }
+
+  .lilly-pads {
+    position: relative;
   }
 
   .frog {
@@ -83,12 +93,12 @@
 
     &.large {
       top: -60%;
-      left: 45%;
+      left: 57%;
       width: 10vw;
-      max-width: 50px;
+      max-width: 60px;
 
       @media (min-width: $medium) {
-        top: -0.5vw;
+        top: 0.5vw;
         right: 23.5vw;
         width: 3vw;
       }
@@ -123,7 +133,7 @@
 
   @media (min-width: $large) {
     top: -2%;
-    right: calc(((100vw - #{$max-content-width})/2) + -8vw)
+    right: calc(((100vw - #{$max-content-width})/2) + -12vw)
   }
 }
 
