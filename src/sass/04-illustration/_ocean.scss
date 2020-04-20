@@ -1,0 +1,59 @@
+/**
+* @file
+* 04-illustration/_ocean.scss
+*/
+.waves {
+  margin-bottom: -1px;
+  background-color: $water-light-blue;
+
+  img {
+    width: 102vw;
+    margin-left: -1vw;
+    padding-top: 8vw;
+  }
+}
+
+.shallows {
+  position: relative;
+  height: 20vw;
+  max-height: 200px;
+  background-image: linear-gradient($ocean-light-blue, $ocean-medium-blue);
+
+  img {
+    width: 100%;
+  }
+}
+
+.sand-bank {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.eel-grass {
+  position: absolute;
+  right: 3%;
+  bottom: 2.5%;
+  width: 40%;
+}
+
+.crab {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 10%;
+  max-width: 200px;
+}
+
+.shrimp {
+  position: absolute;
+  right: 27%;
+  bottom: 0;
+  width: 10%;
+  max-width: 200px;
+}
+
+.fish-school--small {
+  position: absolute;
+  left: 10%;
+}

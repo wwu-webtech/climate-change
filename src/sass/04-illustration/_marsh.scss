@@ -59,9 +59,9 @@
     }
 
     .pool {
+      top: 11%;
       left: 31%;
       width: 25vw;
-      top: 11%;
     }
   }
 
@@ -133,14 +133,15 @@
 
   @media (min-width: $large) {
     top: -2%;
-    right: calc(((100vw - #{$max-content-width})/2) + -12vw)
+    right: calc(((100vw - #{$max-content-width})/2) + -12vw);
   }
 }
 
 .cormorants {
   position: absolute;
-  left: 3%;
+  z-index: 1;
   bottom: -1%;
+  left: 3%;
   width: 20%;
   transform: scalex(-1);
 
