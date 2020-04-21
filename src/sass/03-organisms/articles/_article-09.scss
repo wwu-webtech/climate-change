@@ -8,10 +8,12 @@
   background-image: linear-gradient($ocean-dark-blue, $ocean-darkest-blue);
 
   .title-wrapper {
-    transform: translatey(-26cvw);
+    transform: translatey(-26vw);
+    margin-bottom: -26vw;
 
     @media(min-width: $medium) {
       transform: translatey(-280px);
+      margin-bottom: -280px;
     }
   }
 
@@ -22,13 +24,39 @@
 
   .tagline {
     margin-bottom: 12vw;
-
-    @media(min-width: $medium) {
-      margin-bottom: -120px;
-    }
   }
 
   .call-out-box {
+    border-radius: $border-radius--square;
+    background-color: $ocean-medium-blue;
     margin-bottom: 0;
+    padding: $standard-spacing;
+    margin-top: $triple-spacing;
+
+    h3 {
+      color: $lightest-green;
+    }
+
+    @media (min-width: $medium) {
+      padding: $double-spacing;
+    }
+  }
+
+  blockquote {
+    background-image: linear-gradient($ocean-light-blue, $ocean-medium-blue);
+    border-radius: $border-radius--round-square;
+
+    > div {
+      padding: $standard-spacing;
+
+      @media (min-width: $medium) {
+        padding: $double-spacing;
+      }
+    }
+  }
+
+  .photo {
+    position: relative;
+    z-index: 1;
   }
 }

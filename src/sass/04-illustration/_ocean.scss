@@ -134,5 +134,16 @@
 
 .bottom-of-the-ocean {
   background-color: $ocean-darkest-blue;
-  padding-bottom: $triple-spacing;
+  padding: $triple-spacing;
+}
+
+.orca {
+  position: relative;
+  z-index: 1;
+  max-width: 160vw;
+  left: -10%;
+
+  img {
+    width: 100%;
+  }
 }

@@ -39,3 +39,23 @@ article {
     padding-right: $double-spacing;
   }
 }
+
+.end-credits {
+  margin-top: 12vw;
+  margin-bottom: 4vw;
+
+  h2,
+  .tagline {
+    color: $water-light-blue;
+    text-shadow: none;
+  }
+
+  .credits {
+    color: $white;
+  }
+
+  .thanks {
+    color: $white;
+    font-size: 0.8em;
+  }
+}
