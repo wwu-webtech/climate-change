@@ -55,5 +55,84 @@
 
 .fish-school--small {
   position: absolute;
-  left: 10%;
+  right: 10%;
+  transform: scalex(-1);
+}
+
+.fish-break {
+  height: 50vw;
+  padding: $triple-spacing 0;
+  background-color: $ocean-darkest-blue;
+
+  img {
+    width: 100%;
+  }
+}
+
+.fish-school--medium {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  width: 50vw;
+}
+
+.fish-school--large {
+  position: absolute;
+  right: 6%;
+  bottom: 25%;
+  width: 22vw;
+}
+
+.plankton {
+  position: relative;
+  width: 80vw;
+  max-width: 600px;
+  height: 50vw;
+  max-height: 400px;
+  margin: auto;
+
+  > div {
+    position: absolute;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media(min-width: 1501px) {
+    position: absolute;
+    top: -7vw;
+    left: -41%;
+  }
+}
+
+.colony {
+  top: 7.5%;
+  right: 5%;
+  width: 35%;
+  max-width: 200px;
+}
+
+.magnify {
+  top: 16%;
+  right: 10%;
+  width: 15%;
+  max-width: 90px;
+}
+
+.lines {
+  top: 12%;
+  right: 21%;
+  width: 45%;
+}
+
+.zoomed {
+  top: 10%;
+  left: 0;
+  width: 55%;
+}
+
+.bottom-of-the-ocean {
+  background-color: $ocean-darkest-blue;
+  padding-bottom: $triple-spacing;
 }

@@ -8,7 +8,7 @@
   background-image: linear-gradient($ocean-dark-blue, $ocean-darkest-blue);
 
   .title-wrapper {
-    transform: translatey(-24vw);
+    transform: translatey(-26cvw);
 
     @media(min-width: $medium) {
       transform: translatey(-280px);
@@ -17,6 +17,7 @@
 
   .article-title {
     padding: 0;
+    text-shadow: none;
   }
 
   .tagline {
@@ -25,5 +26,9 @@
     @media(min-width: $medium) {
       margin-bottom: -120px;
     }
+  }
+
+  .call-out-box {
+    margin-bottom: 0;
   }
 }

@@ -3,5 +3,23 @@
 * 03-organisms/articles/_article-10.scss
 */
 .article-10 {
+  color: $white;
   background-color: $ocean-darkest-blue;
+
+  article {
+    position: relative;
+  }
+
+  .article-title {
+    color: $water-light-blue;
+    text-shadow: none;
+  }
+
+  .tagline {
+    color: $water-medium-blue;
+  }
+
+  .call-out-box {    
+    margin-bottom: 0;
+  }
 }
