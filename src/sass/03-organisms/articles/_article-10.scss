@@ -19,11 +19,19 @@
     color: $water-medium-blue;
   }
 
+  .title-decorative-word {
+    word-spacing: 0.11em;
+  }
+
   .call-out-box {
     margin-bottom: 0;
-    padding: 0;
+    padding: $standard-spacing;
     border-radius: $border-radius--square;
     background-image: linear-gradient($darkest-blue, $black);
+
+    @media (min-width:$medium) {
+      padding: $double-spacing;
+    }
 
     h3 {
       color: $water-light-blue;
