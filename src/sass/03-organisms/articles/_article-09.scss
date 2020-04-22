@@ -31,7 +31,7 @@
     background-color: $ocean-medium-blue;
     margin-bottom: 0;
     padding: $standard-spacing;
-    margin-top: $triple-spacing;
+    margin-top: 8vw;
 
     h3 {
       color: $lightest-green;
@@ -52,6 +52,10 @@
       @media (min-width: $medium) {
         padding: $double-spacing;
       }
+    }
+
+    p {
+      text-shadow: 1px 1px 3px $darkest-blue;
     }
   }
 
