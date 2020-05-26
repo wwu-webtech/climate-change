@@ -63,6 +63,10 @@ $menu-width: 200px;
       left: calc(-#{$menu-width} + 60px);
       background-color: transparent;
     }
+
+    nav {
+      display: none;
+    }
   }
 
   h2 {
